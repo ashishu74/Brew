@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-12-07T12:05:03Z" name="Workflow UBREW" finished-at="2018-12-07T12:05:35Z" duration-ms="32356">
+  <suite started-at="2018-12-07T12:37:19Z" name="Workflow UBREW" finished-at="2018-12-07T12:38:11Z" duration-ms="52018">
     <groups>
     </groups>
-    <test started-at="2018-12-07T12:05:03Z" name="VerifyLoginScenarios" finished-at="2018-12-07T12:05:35Z" duration-ms="32356">
+    <test started-at="2018-12-07T12:37:19Z" name="VerifyHomepageUI" finished-at="2018-12-07T12:37:34Z" duration-ms="14981">
+      <class name="UITesting.HomePageUI">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:UITesting.HomePageUI@75db5df9]" started-at="2018-12-07T12:37:19Z" name="launchBrowser" finished-at="2018-12-07T12:37:33Z" duration-ms="14579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="getCssValue_TextFontSize_haveyour()[pri:5, instance:UITesting.HomePageUI@75db5df9]" started-at="2018-12-07T12:37:33Z" name="getCssValue_TextFontSize_haveyour" finished-at="2018-12-07T12:37:33Z" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCssValue_TextFontSize_haveyour -->
+        <test-method signature="getCssValue__TextFontFamily_haveyour()[pri:6, instance:UITesting.HomePageUI@75db5df9]" started-at="2018-12-07T12:37:33Z" name="getCssValue__TextFontFamily_haveyour" finished-at="2018-12-07T12:37:34Z" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCssValue__TextFontFamily_haveyour -->
+        <test-method signature="getCssValue_TextColor_haveyour()[pri:7, instance:UITesting.HomePageUI@75db5df9]" started-at="2018-12-07T12:37:34Z" name="getCssValue_TextColor_haveyour" finished-at="2018-12-07T12:37:34Z" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCssValue_TextColor_haveyour -->
+        <test-method signature="getCssValue_TextFontSize_findsupplier()[pri:8, instance:UITesting.HomePageUI@75db5df9]" started-at="2018-12-07T12:37:34Z" name="getCssValue_TextFontSize_findsupplier" finished-at="2018-12-07T12:37:34Z" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCssValue_TextFontSize_findsupplier -->
+        <test-method signature="getCssValue__TextFontFamily_findsupplier()[pri:9, instance:UITesting.HomePageUI@75db5df9]" started-at="2018-12-07T12:37:34Z" name="getCssValue__TextFontFamily_findsupplier" finished-at="2018-12-07T12:37:34Z" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCssValue__TextFontFamily_findsupplier -->
+        <test-method signature="getCssValue_TextColor_findsupplier()[pri:10, instance:UITesting.HomePageUI@75db5df9]" started-at="2018-12-07T12:37:34Z" name="getCssValue_TextColor_findsupplier" finished-at="2018-12-07T12:37:34Z" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCssValue_TextColor_findsupplier -->
+        <test-method signature="getCssValue_TextFontSize_contract()[pri:11, instance:UITesting.HomePageUI@75db5df9]" started-at="2018-12-07T12:37:34Z" name="getCssValue_TextFontSize_contract" finished-at="2018-12-07T12:37:34Z" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCssValue_TextFontSize_contract -->
+        <test-method signature="getCssValue__TextFontFamily_contract()[pri:12, instance:UITesting.HomePageUI@75db5df9]" started-at="2018-12-07T12:37:34Z" name="getCssValue__TextFontFamily_contract" finished-at="2018-12-07T12:37:34Z" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCssValue__TextFontFamily_contract -->
+        <test-method signature="getCssValue_TextColor_contract()[pri:13, instance:UITesting.HomePageUI@75db5df9]" started-at="2018-12-07T12:37:34Z" name="getCssValue_TextColor_contract" finished-at="2018-12-07T12:37:34Z" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCssValue_TextColor_contract -->
+      </class> <!-- UITesting.HomePageUI -->
+    </test> <!-- VerifyHomepageUI -->
+    <test started-at="2018-12-07T12:37:34Z" name="VerifyLoginScenarios" finished-at="2018-12-07T12:38:11Z" duration-ms="37009">
       <class name="com.TestCases.VerifyLoginScenarios">
-        <test-method signature="loginScenarios()[pri:0, instance:com.TestCases.VerifyLoginScenarios@7770f470]" started-at="2018-12-07T12:05:03Z" name="loginScenarios" finished-at="2018-12-07T12:05:33Z" duration-ms="30251" status="PASS">
+        <test-method signature="loginScenarios()[pri:0, instance:com.TestCases.VerifyLoginScenarios@31f9b85e]" started-at="2018-12-07T12:37:34Z" name="loginScenarios" finished-at="2018-12-07T12:38:09Z" duration-ms="34931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginScenarios -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TestCases.VerifyLoginScenarios@7770f470]" started-at="2018-12-07T12:05:33Z" name="tearDown" finished-at="2018-12-07T12:05:35Z" duration-ms="2084" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TestCases.VerifyLoginScenarios@31f9b85e]" started-at="2018-12-07T12:38:09Z" name="tearDown" finished-at="2018-12-07T12:38:11Z" duration-ms="2077" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="30.254" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="35.305" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="10.0.2+13-Ubuntu-1ubuntu0.18.04.4"/>
@@ -61,5 +61,14 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="loginScenarios" classname="com.TestCases.VerifyLoginScenarios" time="30.254"/>
+  <testcase name="getCssValue_TextFontSize_haveyour" classname="UITesting.HomePageUI" time="0.048"/>
+  <testcase name="getCssValue__TextFontFamily_haveyour" classname="UITesting.HomePageUI" time="0.037"/>
+  <testcase name="getCssValue_TextColor_haveyour" classname="UITesting.HomePageUI" time="0.04"/>
+  <testcase name="getCssValue_TextFontSize_findsupplier" classname="UITesting.HomePageUI" time="0.059"/>
+  <testcase name="getCssValue__TextFontFamily_findsupplier" classname="UITesting.HomePageUI" time="0.041"/>
+  <testcase name="getCssValue_TextColor_findsupplier" classname="UITesting.HomePageUI" time="0.04"/>
+  <testcase name="getCssValue_TextFontSize_contract" classname="UITesting.HomePageUI" time="0.043"/>
+  <testcase name="getCssValue__TextFontFamily_contract" classname="UITesting.HomePageUI" time="0.034"/>
+  <testcase name="getCssValue_TextColor_contract" classname="UITesting.HomePageUI" time="0.032"/>
+  <testcase name="loginScenarios" classname="com.TestCases.VerifyLoginScenarios" time="34.931"/>
 </testsuite>
