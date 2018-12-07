@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods, 6 failed,   10 passed</span>
+                    <span class="method-stats">16 methods, 7 failed,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -128,6 +128,11 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Workflow_UBREW" title="com.TestCases.VerifyCreateTenderfromBuyer" class="method navigator-link" hash-for-method="createTenderbyBuyer">createTenderbyBuyer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Workflow_UBREW" title="com.TestCases.VerifyLoginScenarios" class="method navigator-link" hash-for-method="loginScenarios">loginScenarios</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Workflow_UBREW -->
@@ -184,11 +189,6 @@
                         <a href="#" panel-name="suite-Workflow_UBREW" title="UITesting.HomePageUI" class="method navigator-link" hash-for-method="getCssValue__TextFontFamily_haveyour">getCssValue__TextFontFamily_haveyour</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Workflow_UBREW" title="com.TestCases.VerifyLoginScenarios" class="method navigator-link" hash-for-method="loginScenarios">loginScenarios</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Workflow_UBREW -->
                   </li>
                 </ul>
@@ -212,7 +212,7 @@
                   <a name="createTenderbyBuyer">
                   </a> <!-- createTenderbyBuyer -->
                   <span class="method-name">createTenderbyBuyer</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;app&quot;]/div/div[2]/div/div[2]/div/div[2]/div/div[2]/div[2]/input&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;tender_volume&quot;]/form/div[1]/div/div[2]/div[8]/section/div[1]/div/div[1]/div/div/input&quot;}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -220,9 +220,9 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
 System info: host: &apos;ucreate73&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-42-generic&apos;, java.version: &apos;10.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:39125}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: 12f8bed7d6f2709d889073a5cadd0eaf
-*** Element info: {Using=xpath, value=//*[@id=&quot;app&quot;]/div/div[2]/div/div[2]/div/div[2]/div/div[2]/div[2]/input}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:36379}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: bf3de1bc34b909bab59a497a8a3bf699
+*** Element info: {Using=xpath, value=//*[@id=&quot;tender_volume&quot;]/form/div[1]/div/div[2]/div[8]/section/div[1]/div/div[1]/div/div/input}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -237,9 +237,9 @@ Session ID: 12f8bed7d6f2709d889073a5cadd0eaf
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.pages.CreateTenderfromBuyerPage.continue_step_seven(CreateTenderfromBuyerPage.java:519)
-	at com.TestCases.VerifyCreateTenderfromBuyer.createTenderbyBuyer(VerifyCreateTenderfromBuyer.java:99)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at com.pages.CreateTenderfromBuyerPage.volume_ales(CreateTenderfromBuyerPage.java:289)
+	at com.TestCases.VerifyCreateTenderfromBuyer.createTenderbyBuyer(VerifyCreateTenderfromBuyer.java:65)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -257,15 +257,17 @@ Session ID: 12f8bed7d6f2709d889073a5cadd0eaf
                   <a name="EditSupplierPage">
                   </a> <!-- EditSupplierPage -->
                   <span class="method-name">EditSupplierPage</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;button class=&quot;editProfile_smallButton&quot;&gt;...&lt;/button&gt; is not clickable at point (1406, 920). Other element would receive the click: &lt;div data-reactroot=&quot;&quot; class=&quot;c011 c012 popupoverlay&quot;&gt;...&lt;/div&gt;
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;app&quot;]/div/div[2]/div[2]/div/div[4]/div[1]/div[1]/div/button&quot;}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
 System info: host: &apos;ucreate73&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-42-generic&apos;, java.version: &apos;10.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:43355}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: 2701c9eddda6cdeb5cdb9af58b2a3d87
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:32779}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 40c8a93dca714f2c7cf9fd0fb3b7a40e
+*** Element info: {Using=xpath, value=//*[@id=&quot;app&quot;]/div/div[2]/div[2]/div/div[4]/div[1]/div[1]/div/button}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -274,13 +276,16 @@ Session ID: 2701c9eddda6cdeb5cdb9af58b2a3d87
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.pages.CreateEditSupplierPage.EditAwards(CreateEditSupplierPage.java:109)
-	at com.TestCases.VerifyEditSupplierProfile.EditSupplierPage(VerifyEditSupplierProfile.java:50)
-... Removed 35 stack frames
+	at com.pages.CreateEditSupplierPage.EditStandard(CreateEditSupplierPage.java:48)
+	at com.TestCases.VerifyEditSupplierProfile.EditSupplierPage(VerifyEditSupplierProfile.java:44)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -297,7 +302,7 @@ Session ID: 2701c9eddda6cdeb5cdb9af58b2a3d87
                   <a name="createRecipebyBuyer">
                   </a> <!-- createRecipebyBuyer -->
                   <span class="method-name">createRecipebyBuyer</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;app&quot;]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;finalCosts&quot;]&quot;}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -305,9 +310,9 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
 System info: host: &apos;ucreate73&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-42-generic&apos;, java.version: &apos;10.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:36797}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: 61cff9f4f31033a69e5c9a293ff3483d
-*** Element info: {Using=xpath, value=//*[@id=&quot;app&quot;]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:43459}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 83e3c648fb347a2bd7861e471e822e34
+*** Element info: {Using=xpath, value=//*[@id=&quot;finalCosts&quot;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -323,8 +328,8 @@ Session ID: 61cff9f4f31033a69e5c9a293ff3483d
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.pages.CreateFinalizeQuoteBuyerPage.ClickFinalizing(CreateFinalizeQuoteBuyerPage.java:15)
-	at com.TestCases.VerifyFinalizeQuoteBuyer.createRecipebyBuyer(VerifyFinalizeQuoteBuyer.java:42)
+	at com.pages.CreateFinalizeQuoteBuyerPage.TermsAndConditions(CreateFinalizeQuoteBuyerPage.java:34)
+	at com.TestCases.VerifyFinalizeQuoteBuyer.createRecipebyBuyer(VerifyFinalizeQuoteBuyer.java:44)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -342,7 +347,7 @@ Session ID: 61cff9f4f31033a69e5c9a293ff3483d
                   <a name="createQuotebySupplier">
                   </a> <!-- createQuotebySupplier -->
                   <span class="method-name">createQuotebySupplier</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;app&quot;]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[1]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#app &gt; div &gt; div.route-wrap &gt; div &gt; div.dashboardWrap &gt; div &gt; div.rightPanel &gt; div.rightPanel_content &gt; div &gt; div:nth-child(3) &gt; div.btnrow.nobdr.btnrowfixed &gt; a.receivedtender-btn.btn.btn-green-bdr.accept-requirements&quot;}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -350,9 +355,9 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
 System info: host: &apos;ucreate73&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-42-generic&apos;, java.version: &apos;10.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:32939}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: d07e039e2d6cb37c2279ab8693445f9b
-*** Element info: {Using=xpath, value=//*[@id=&quot;app&quot;]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[1]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:41543}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 532c6e1e3cbc24f1ec69fd4a6483c410
+*** Element info: {Using=css selector, value=#app &gt; div &gt; div.route-wrap &gt; div &gt; div.dashboardWrap &gt; div &gt; div.rightPanel &gt; div.rightPanel_content &gt; div &gt; div:nth-child(3) &gt; div.btnrow.nobdr.btnrowfixed &gt; a.receivedtender-btn.btn.btn-green-bdr.accept-requirements}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -362,14 +367,14 @@ Session ID: d07e039e2d6cb37c2279ab8693445f9b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:411)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at com.pages.CreateQuoteSupplierPage.toreview_tender(CreateQuoteSupplierPage.java:264)
-	at com.TestCases.VerifyCreateQuoteFromSupplier.createQuotebySupplier(VerifyCreateQuoteFromSupplier.java:41)
+	at com.pages.CreateQuoteSupplierPage.createquote_allrequirement(CreateQuoteSupplierPage.java:273)
+	at com.TestCases.VerifyCreateQuoteFromSupplier.createQuotebySupplier(VerifyCreateQuoteFromSupplier.java:43)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -387,7 +392,7 @@ Session ID: d07e039e2d6cb37c2279ab8693445f9b
                   <a name="createRecipebyBuyer">
                   </a> <!-- createRecipebyBuyer -->
                   <span class="method-name">createRecipebyBuyer</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;app&quot;]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;app&quot;]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div[3]/div[19]/input[2]&quot;}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -395,9 +400,9 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
 System info: host: &apos;ucreate73&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-42-generic&apos;, java.version: &apos;10.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:44933}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: 5b65de60f66ecb6c043a49e9e6320681
-*** Element info: {Using=xpath, value=//*[@id=&quot;app&quot;]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:33167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 5d9b70f2a675f3803b491f6ee04e7fba
+*** Element info: {Using=xpath, value=//*[@id=&quot;app&quot;]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div[3]/div[19]/input[2]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -413,8 +418,8 @@ Session ID: 5b65de60f66ecb6c043a49e9e6320681
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.pages.CreateProvideRecipeBuyerPage.ClickTender(CreateProvideRecipeBuyerPage.java:17)
-	at com.TestCases.VerifyCreateRecipeFromBuyer.createRecipebyBuyer(VerifyCreateRecipeFromBuyer.java:43)
+	at com.pages.CreateProvideRecipeBuyerPage.approveAndProvideRecipe(CreateProvideRecipeBuyerPage.java:33)
+	at com.TestCases.VerifyCreateRecipeFromBuyer.createRecipebyBuyer(VerifyCreateRecipeFromBuyer.java:45)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -440,8 +445,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
 System info: host: &apos;ucreate73&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-42-generic&apos;, java.version: &apos;10.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:38751}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: cc6560d30fcde8384b7bccb42a3cea13
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:41329}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 1759a4d877fc6026cf8b957901a25ecf
 *** Element info: {Using=xpath, value=//*[@id=&quot;app&quot;]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[3]/div[3]/div[3]/div/div}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
@@ -461,6 +466,26 @@ Session ID: cc6560d30fcde8384b7bccb42a3cea13
 	at com.pages.CreateRecipeFinalCostSupplierPage.TotalCost(CreateRecipeFinalCostSupplierPage.java:31)
 	at com.TestCases.VerifyRecipeTotalCostFromSupplier.RecipeTotalCostSupplier(VerifyRecipeTotalCostFromSupplier.java:50)
 ... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Workflow_UBREW-class-failed -->
+          <div class="suite-Workflow_UBREW-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.TestCases.VerifyLoginScenarios</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginScenarios">
+                  </a> <!-- loginScenarios -->
+                  <span class="method-name">loginScenarios</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [] but found [Please enter email address]
+	at com.pages.CreateLoginscenarios.VerifyRequiredEmailValidation(CreateLoginscenarios.java:70)
+	at com.TestCases.VerifyLoginScenarios.loginScenarios(VerifyLoginScenarios.java:29)
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -537,25 +562,10 @@ Session ID: cc6560d30fcde8384b7bccb42a3cea13
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Workflow_UBREW-class-passed -->
-          <div class="suite-Workflow_UBREW-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.TestCases.VerifyLoginScenarios</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginScenarios">
-                  </a> <!-- loginScenarios -->
-                  <span class="method-name">loginScenarios</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Workflow_UBREW-class-passed -->
         </div> <!-- panel Workflow_UBREW -->
         <div panel-name="test-xml-Workflow_UBREW" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/ucreate-73/Documents/eclipse/src/main/resources/NewFile.xml</span>
+            <span class="header-content">/home/ucreate-73/Documents/Brew/Brew/src/main/resources/NewFile.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -668,72 +678,72 @@ data.addRows(16);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createTenderbyBuyer')
 data.setCell(0, 2, 'com.TestCases.VerifyCreateTenderfromBuyer')
-data.setCell(0, 3, 89073);
+data.setCell(0, 3, 60686);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'EditSupplierPage')
-data.setCell(1, 2, 'com.TestCases.VerifyEditSupplierProfile')
-data.setCell(1, 3, 59858);
+data.setCell(1, 1, 'createRecipebyBuyer')
+data.setCell(1, 2, 'com.TestCases.VerifyCreateRecipeFromBuyer')
+data.setCell(1, 3, 39547);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createQuotebySupplier')
-data.setCell(2, 2, 'com.TestCases.VerifyCreateQuoteFromSupplier')
-data.setCell(2, 3, 28263);
+data.setCell(2, 1, 'EditSupplierPage')
+data.setCell(2, 2, 'com.TestCases.VerifyEditSupplierProfile')
+data.setCell(2, 3, 38069);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createRecipebyBuyer')
-data.setCell(3, 2, 'com.TestCases.VerifyCreateRecipeFromBuyer')
-data.setCell(3, 3, 27313);
+data.setCell(3, 1, 'createQuotebySupplier')
+data.setCell(3, 2, 'com.TestCases.VerifyCreateQuoteFromSupplier')
+data.setCell(3, 3, 26529);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'RecipeTotalCostSupplier')
 data.setCell(4, 2, 'com.TestCases.VerifyRecipeTotalCostFromSupplier')
-data.setCell(4, 3, 26663);
+data.setCell(4, 3, 20537);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginScenarios')
-data.setCell(5, 2, 'com.TestCases.VerifyLoginScenarios')
-data.setCell(5, 3, 23345);
+data.setCell(5, 1, 'createRecipebyBuyer')
+data.setCell(5, 2, 'com.TestCases.VerifyFinalizeQuoteBuyer')
+data.setCell(5, 3, 19798);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'createRecipebyBuyer')
-data.setCell(6, 2, 'com.TestCases.VerifyFinalizeQuoteBuyer')
-data.setCell(6, 3, 17921);
+data.setCell(6, 1, 'loginScenarios')
+data.setCell(6, 2, 'com.TestCases.VerifyLoginScenarios')
+data.setCell(6, 3, 16370);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'getCssValue_TextFontSize_contract')
+data.setCell(7, 1, 'getCssValue__TextFontFamily_contract')
 data.setCell(7, 2, 'UITesting.HomePageUI')
-data.setCell(7, 3, 39);
+data.setCell(7, 3, 51);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'getCssValue_TextFontSize_haveyour')
+data.setCell(8, 1, 'getCssValue_TextFontSize_findsupplier')
 data.setCell(8, 2, 'UITesting.HomePageUI')
-data.setCell(8, 3, 39);
+data.setCell(8, 3, 46);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'getCssValue_TextFontSize_findsupplier')
+data.setCell(9, 1, 'getCssValue_TextFontSize_haveyour')
 data.setCell(9, 2, 'UITesting.HomePageUI')
-data.setCell(9, 3, 37);
+data.setCell(9, 3, 46);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'getCssValue__TextFontFamily_findsupplier')
+data.setCell(10, 1, 'getCssValue_TextFontSize_contract')
 data.setCell(10, 2, 'UITesting.HomePageUI')
-data.setCell(10, 3, 34);
+data.setCell(10, 3, 41);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'getCssValue__TextFontFamily_contract')
+data.setCell(11, 1, 'getCssValue_TextColor_contract')
 data.setCell(11, 2, 'UITesting.HomePageUI')
-data.setCell(11, 3, 33);
+data.setCell(11, 3, 39);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'getCssValue__TextFontFamily_haveyour')
+data.setCell(12, 1, 'getCssValue_TextColor_haveyour')
 data.setCell(12, 2, 'UITesting.HomePageUI')
-data.setCell(12, 3, 31);
+data.setCell(12, 3, 37);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'getCssValue_TextColor_findsupplier')
+data.setCell(13, 1, 'getCssValue__TextFontFamily_haveyour')
 data.setCell(13, 2, 'UITesting.HomePageUI')
-data.setCell(13, 3, 31);
+data.setCell(13, 3, 35);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'getCssValue_TextColor_contract')
+data.setCell(14, 1, 'getCssValue_TextColor_findsupplier')
 data.setCell(14, 2, 'UITesting.HomePageUI')
-data.setCell(14, 3, 31);
+data.setCell(14, 3, 33);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'getCssValue_TextColor_haveyour')
+data.setCell(15, 1, 'getCssValue__TextFontFamily_findsupplier')
 data.setCell(15, 2, 'UITesting.HomePageUI')
-data.setCell(15, 3, 28);
+data.setCell(15, 3, 33);
 window.suiteTableData['Workflow_UBREW']= { tableData: data, tableDiv: 'times-div-Workflow_UBREW'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Workflow_UBREW">
               </div> <!-- times-div-Workflow_UBREW -->
             </div> <!-- times-div -->
@@ -752,11 +762,6 @@ return data;
                 <span class="reporter-method-output">Buyer logged in to brewbroker</span>
                 <span class="reporter-method-output">Step one tender details are filled</span>
                 <span class="reporter-method-output">Buyer moved to step two create tender</span>
-                <span class="reporter-method-output">Create tender step four buyer moved</span>
-                <span class="reporter-method-output">Buyer completed create tender step four</span>
-                <span class="reporter-method-output">create tender step five complted</span>
-                <span class="reporter-method-output">Buyer moved create tender step six</span>
-                <span class="reporter-method-output">Create tender step six completed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -791,7 +796,6 @@ return data;
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Supplier logged in to his account</span>
                 <span class="reporter-method-output">Supplier profile summary edited</span>
-                <span class="reporter-method-output">Supplier profile standards qualification edited</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -818,7 +822,7 @@ return data;
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">89080 ms</span>
+                <span class="method-start">60716 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -827,11 +831,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">createQuotebySupplier</span>
-                <span class="method-start">94206 ms</span>
+                <span class="method-start">65852 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">122470 ms</span>
+                <span class="method-start">92383 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -840,11 +844,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">createRecipebyBuyer</span>
-                <span class="method-start">127573 ms</span>
+                <span class="method-start">97487 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">154887 ms</span>
+                <span class="method-start">137036 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -853,11 +857,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">RecipeTotalCostSupplier</span>
-                <span class="method-start">159975 ms</span>
+                <span class="method-start">142122 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">186639 ms</span>
+                <span class="method-start">162660 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -866,11 +870,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">createRecipebyBuyer</span>
-                <span class="method-start">191732 ms</span>
+                <span class="method-start">167754 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">209655 ms</span>
+                <span class="method-start">187554 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -879,62 +883,68 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">EditSupplierPage</span>
-                <span class="method-start">214751 ms</span>
+                <span class="method-start">192643 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">274610 ms</span>
+                <span class="method-start">230713 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">UITesting.HomePageUI</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">279708 ms</span>
+                <span class="method-start">235804 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">getCssValue_TextFontSize_haveyour</span>
-                <span class="method-start">317588 ms</span>
+                <span class="method-start">261650 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getCssValue__TextFontFamily_haveyour</span>
-                <span class="method-start">317628 ms</span>
+                <span class="method-start">261697 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getCssValue_TextColor_haveyour</span>
-                <span class="method-start">317660 ms</span>
+                <span class="method-start">261733 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getCssValue_TextFontSize_findsupplier</span>
-                <span class="method-start">317688 ms</span>
+                <span class="method-start">261771 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getCssValue__TextFontFamily_findsupplier</span>
-                <span class="method-start">317726 ms</span>
+                <span class="method-start">261818 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getCssValue_TextColor_findsupplier</span>
-                <span class="method-start">317760 ms</span>
+                <span class="method-start">261851 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getCssValue_TextFontSize_contract</span>
-                <span class="method-start">317791 ms</span>
+                <span class="method-start">261885 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getCssValue__TextFontFamily_contract</span>
-                <span class="method-start">317831 ms</span>
+                <span class="method-start">261927 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getCssValue_TextColor_contract</span>
-                <span class="method-start">317864 ms</span>
+                <span class="method-start">261978 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.TestCases.VerifyLoginScenarios</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginScenarios</span>
-                <span class="method-start">317899 ms</span>
+                <span class="method-start">262022 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">278392 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

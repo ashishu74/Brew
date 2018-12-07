@@ -65,4 +65,14 @@
       </class> <!-- com.TestCases.VerifyEditSupplierProfile -->
     </classes>
   </test> <!-- VerifyEditSupplierProfile(failed) -->
+  <test thread-count="5" name="VerifyLoginScenarios(failed)" verbose="0">
+    <classes>
+      <class name="com.TestCases.VerifyLoginScenarios">
+        <methods>
+          <include name="loginScenarios"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.TestCases.VerifyLoginScenarios -->
+    </classes>
+  </test> <!-- VerifyLoginScenarios(failed) -->
 </suite> <!-- Failed suite [Workflow UBREW] -->

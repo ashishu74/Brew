@@ -4,18 +4,18 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.303">
+           time="0.361">
   <properties />
   
   
-            <testcase name="getCssValue__TextFontFamily_haveyour" time="0.031" classname="UITesting.HomePageUI" />
-                <testcase name="getCssValue_TextFontSize_contract" time="0.039" classname="UITesting.HomePageUI" />
-                <testcase name="getCssValue_TextColor_haveyour" time="0.028" classname="UITesting.HomePageUI" />
-                <testcase name="getCssValue_TextColor_findsupplier" time="0.031" classname="UITesting.HomePageUI" />
-                <testcase name="getCssValue__TextFontFamily_findsupplier" time="0.034" classname="UITesting.HomePageUI" />
-                <testcase name="getCssValue_TextFontSize_findsupplier" time="0.037" classname="UITesting.HomePageUI" />
-                <testcase name="getCssValue_TextColor_contract" time="0.031" classname="UITesting.HomePageUI" />
-                <testcase name="getCssValue__TextFontFamily_contract" time="0.033" classname="UITesting.HomePageUI" />
-                <testcase name="getCssValue_TextFontSize_haveyour" time="0.039" classname="UITesting.HomePageUI" />
+            <testcase name="getCssValue_TextFontSize_findsupplier" time="0.046" classname="UITesting.HomePageUI" />
+                <testcase name="getCssValue_TextColor_findsupplier" time="0.033" classname="UITesting.HomePageUI" />
+                <testcase name="getCssValue__TextFontFamily_findsupplier" time="0.033" classname="UITesting.HomePageUI" />
+                <testcase name="getCssValue_TextColor_haveyour" time="0.037" classname="UITesting.HomePageUI" />
+                <testcase name="getCssValue_TextFontSize_contract" time="0.041" classname="UITesting.HomePageUI" />
+                <testcase name="getCssValue_TextColor_contract" time="0.039" classname="UITesting.HomePageUI" />
+                <testcase name="getCssValue__TextFontFamily_contract" time="0.051" classname="UITesting.HomePageUI" />
+                <testcase name="getCssValue_TextFontSize_haveyour" time="0.046" classname="UITesting.HomePageUI" />
+                <testcase name="getCssValue__TextFontFamily_haveyour" time="0.035" classname="UITesting.HomePageUI" />
       
 </testsuite>

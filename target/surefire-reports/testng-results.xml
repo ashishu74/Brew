@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="10" failed="6" skipped="0">
+<testng-results ignored="0" total="16" passed="9" failed="7" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Browser launched]]>
@@ -15,21 +15,6 @@
     </line>
     <line>
       <![CDATA[Buyer moved to step two create tender]]>
-    </line>
-    <line>
-      <![CDATA[Create tender step four buyer moved]]>
-    </line>
-    <line>
-      <![CDATA[Buyer completed create tender step four]]>
-    </line>
-    <line>
-      <![CDATA[create tender step five complted]]>
-    </line>
-    <line>
-      <![CDATA[Buyer moved create tender step six]]>
-    </line>
-    <line>
-      <![CDATA[Create tender step six completed]]>
     </line>
     <line>
       <![CDATA[Supplier member logged in to account]]>
@@ -58,19 +43,16 @@
     <line>
       <![CDATA[Supplier profile summary edited]]>
     </line>
-    <line>
-      <![CDATA[Supplier profile standards qualification edited]]>
-    </line>
   </reporter-output>
-  <suite started-at="2018-12-06T11:20:30Z" name="Workflow UBREW" finished-at="2018-12-06T11:26:11Z" duration-ms="341267">
+  <suite started-at="2018-12-07T10:20:59Z" name="Workflow UBREW" finished-at="2018-12-07T10:25:40Z" duration-ms="280488">
     <groups>
     </groups>
-    <test started-at="2018-12-06T11:20:30Z" name="VerifyCreateTender" finished-at="2018-12-06T11:22:04Z" duration-ms="94185">
+    <test started-at="2018-12-07T10:20:59Z" name="VerifyCreateTender" finished-at="2018-12-07T10:22:05Z" duration-ms="65827">
       <class name="com.TestCases.VerifyCreateTenderfromBuyer">
-        <test-method signature="createTenderbyBuyer()[pri:0, instance:com.TestCases.VerifyCreateTenderfromBuyer@7770f470]" started-at="2018-12-06T11:20:30Z" name="createTenderbyBuyer" finished-at="2018-12-06T11:21:59Z" duration-ms="89073" status="FAIL">
+        <test-method signature="createTenderbyBuyer()[pri:0, instance:com.TestCases.VerifyCreateTenderfromBuyer@7770f470]" started-at="2018-12-07T10:20:59Z" name="createTenderbyBuyer" finished-at="2018-12-07T10:22:00Z" duration-ms="60686" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div/div[2]/div[2]/input"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="tender_volume"]/form/div[1]/div/div[2]/div[8]/section/div[1]/div/div[1]/div/div/input"}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -78,12 +60,12 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ucreate73', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:39125}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: 12f8bed7d6f2709d889073a5cadd0eaf
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div/div[2]/div[2]/input}]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:36379}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: bf3de1bc34b909bab59a497a8a3bf699
+*** Element info: {Using=xpath, value=//*[@id="tender_volume"]/form/div[1]/div/div[2]/div[8]/section/div[1]/div/div[1]/div/div/input}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div/div[2]/div[2]/input"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="tender_volume"]/form/div[1]/div/div[2]/div[8]/section/div[1]/div/div[1]/div/div/input"}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -91,9 +73,9 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ucreate73', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:39125}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: 12f8bed7d6f2709d889073a5cadd0eaf
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div/div[2]/div[2]/input}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:36379}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: bf3de1bc34b909bab59a497a8a3bf699
+*** Element info: {Using=xpath, value=//*[@id="tender_volume"]/form/div[1]/div/div[2]/div[8]/section/div[1]/div/div[1]/div/div/input}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -112,9 +94,9 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy9.click(Unknown Source)
-at com.pages.CreateTenderfromBuyerPage.continue_step_seven(CreateTenderfromBuyerPage.java:519)
-at com.TestCases.VerifyCreateTenderfromBuyer.createTenderbyBuyer(VerifyCreateTenderfromBuyer.java:99)
+at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+at com.pages.CreateTenderfromBuyerPage.volume_ales(CreateTenderfromBuyerPage.java:289)
+at com.TestCases.VerifyCreateTenderfromBuyer.createTenderbyBuyer(VerifyCreateTenderfromBuyer.java:65)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -162,35 +144,20 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
             <line>
               <![CDATA[Buyer moved to step two create tender]]>
             </line>
-            <line>
-              <![CDATA[Create tender step four buyer moved]]>
-            </line>
-            <line>
-              <![CDATA[Buyer completed create tender step four]]>
-            </line>
-            <line>
-              <![CDATA[create tender step five complted]]>
-            </line>
-            <line>
-              <![CDATA[Buyer moved create tender step six]]>
-            </line>
-            <line>
-              <![CDATA[Create tender step six completed]]>
-            </line>
           </reporter-output>
         </test-method> <!-- createTenderbyBuyer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestCases.VerifyCreateTenderfromBuyer@7770f470]" started-at="2018-12-06T11:21:59Z" name="teardown" finished-at="2018-12-06T11:22:04Z" duration-ms="5082" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestCases.VerifyCreateTenderfromBuyer@7770f470]" started-at="2018-12-07T10:22:00Z" name="teardown" finished-at="2018-12-07T10:22:05Z" duration-ms="5087" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.TestCases.VerifyCreateTenderfromBuyer -->
     </test> <!-- VerifyCreateTender -->
-    <test started-at="2018-12-06T11:22:04Z" name="VerifyCreateQuote" finished-at="2018-12-06T11:22:37Z" duration-ms="33341">
+    <test started-at="2018-12-07T10:22:05Z" name="VerifyCreateQuote" finished-at="2018-12-07T10:22:37Z" duration-ms="31611">
       <class name="com.TestCases.VerifyCreateQuoteFromSupplier">
-        <test-method signature="createQuotebySupplier()[pri:0, instance:com.TestCases.VerifyCreateQuoteFromSupplier@7530ad9c]" started-at="2018-12-06T11:22:04Z" name="createQuotebySupplier" finished-at="2018-12-06T11:22:32Z" duration-ms="28263" status="FAIL">
+        <test-method signature="createQuotebySupplier()[pri:0, instance:com.TestCases.VerifyCreateQuoteFromSupplier@7530ad9c]" started-at="2018-12-07T10:22:05Z" name="createQuotebySupplier" finished-at="2018-12-07T10:22:32Z" duration-ms="26529" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[1]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#app > div > div.route-wrap > div > div.dashboardWrap > div > div.rightPanel > div.rightPanel_content > div > div:nth-child(3) > div.btnrow.nobdr.btnrowfixed > a.receivedtender-btn.btn.btn-green-bdr.accept-requirements"}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -198,12 +165,12 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ucreate73', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:32939}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: d07e039e2d6cb37c2279ab8693445f9b
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[1]}]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:41543}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 532c6e1e3cbc24f1ec69fd4a6483c410
+*** Element info: {Using=css selector, value=#app > div > div.route-wrap > div > div.dashboardWrap > div > div.rightPanel > div.rightPanel_content > div > div:nth-child(3) > div.btnrow.nobdr.btnrowfixed > a.receivedtender-btn.btn.btn-green-bdr.accept-requirements}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[1]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#app > div > div.route-wrap > div > div.dashboardWrap > div > div.rightPanel > div.rightPanel_content > div > div:nth-child(3) > div.btnrow.nobdr.btnrowfixed > a.receivedtender-btn.btn.btn-green-bdr.accept-requirements"}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -211,9 +178,9 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ucreate73', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:32939}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: d07e039e2d6cb37c2279ab8693445f9b
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[1]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:41543}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 532c6e1e3cbc24f1ec69fd4a6483c410
+*** Element info: {Using=css selector, value=#app > div > div.route-wrap > div > div.dashboardWrap > div > div.rightPanel > div.rightPanel_content > div > div:nth-child(3) > div.btnrow.nobdr.btnrowfixed > a.receivedtender-btn.btn.btn-green-bdr.accept-requirements}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -227,14 +194,14 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:411)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-at com.pages.CreateQuoteSupplierPage.toreview_tender(CreateQuoteSupplierPage.java:264)
-at com.TestCases.VerifyCreateQuoteFromSupplier.createQuotebySupplier(VerifyCreateQuoteFromSupplier.java:41)
+at com.pages.CreateQuoteSupplierPage.createquote_allrequirement(CreateQuoteSupplierPage.java:273)
+at com.TestCases.VerifyCreateQuoteFromSupplier.createQuotebySupplier(VerifyCreateQuoteFromSupplier.java:43)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -275,18 +242,18 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
             </line>
           </reporter-output>
         </test-method> <!-- createQuotebySupplier -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestCases.VerifyCreateQuoteFromSupplier@7530ad9c]" started-at="2018-12-06T11:22:32Z" name="teardown" finished-at="2018-12-06T11:22:37Z" duration-ms="5077" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestCases.VerifyCreateQuoteFromSupplier@7530ad9c]" started-at="2018-12-07T10:22:32Z" name="teardown" finished-at="2018-12-07T10:22:37Z" duration-ms="5080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.TestCases.VerifyCreateQuoteFromSupplier -->
     </test> <!-- VerifyCreateQuote -->
-    <test started-at="2018-12-06T11:22:37Z" name="VerifyCreateRecipe" finished-at="2018-12-06T11:23:10Z" duration-ms="32393">
+    <test started-at="2018-12-07T10:22:37Z" name="VerifyCreateRecipe" finished-at="2018-12-07T10:23:22Z" duration-ms="44625">
       <class name="com.TestCases.VerifyCreateRecipeFromBuyer">
-        <test-method signature="createRecipebyBuyer()[pri:0, instance:com.TestCases.VerifyCreateRecipeFromBuyer@75db5df9]" started-at="2018-12-06T11:22:37Z" name="createRecipebyBuyer" finished-at="2018-12-06T11:23:05Z" duration-ms="27313" status="FAIL">
+        <test-method signature="createRecipebyBuyer()[pri:0, instance:com.TestCases.VerifyCreateRecipeFromBuyer@75db5df9]" started-at="2018-12-07T10:22:37Z" name="createRecipebyBuyer" finished-at="2018-12-07T10:23:17Z" duration-ms="39547" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div[3]/div[19]/input[2]"}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -294,12 +261,12 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ucreate73', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:44933}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: 5b65de60f66ecb6c043a49e9e6320681
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]}]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:33167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 5d9b70f2a675f3803b491f6ee04e7fba
+*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div[3]/div[19]/input[2]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div[3]/div[19]/input[2]"}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -307,9 +274,9 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ucreate73', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:44933}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: 5b65de60f66ecb6c043a49e9e6320681
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:33167}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 5d9b70f2a675f3803b491f6ee04e7fba
+*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div[3]/div[19]/input[2]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -329,8 +296,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy9.click(Unknown Source)
-at com.pages.CreateProvideRecipeBuyerPage.ClickTender(CreateProvideRecipeBuyerPage.java:17)
-at com.TestCases.VerifyCreateRecipeFromBuyer.createRecipebyBuyer(VerifyCreateRecipeFromBuyer.java:43)
+at com.pages.CreateProvideRecipeBuyerPage.approveAndProvideRecipe(CreateProvideRecipeBuyerPage.java:33)
+at com.TestCases.VerifyCreateRecipeFromBuyer.createRecipebyBuyer(VerifyCreateRecipeFromBuyer.java:45)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -368,15 +335,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
             </line>
           </reporter-output>
         </test-method> <!-- createRecipebyBuyer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestCases.VerifyCreateRecipeFromBuyer@75db5df9]" started-at="2018-12-06T11:23:05Z" name="teardown" finished-at="2018-12-06T11:23:10Z" duration-ms="5078" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestCases.VerifyCreateRecipeFromBuyer@75db5df9]" started-at="2018-12-07T10:23:17Z" name="teardown" finished-at="2018-12-07T10:23:22Z" duration-ms="5075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.TestCases.VerifyCreateRecipeFromBuyer -->
     </test> <!-- VerifyCreateRecipe -->
-    <test started-at="2018-12-06T11:23:10Z" name="VerifyCreateRecipeFinalCost" finished-at="2018-12-06T11:23:42Z" duration-ms="31746">
+    <test started-at="2018-12-07T10:23:22Z" name="VerifyCreateRecipeFinalCost" finished-at="2018-12-07T10:23:47Z" duration-ms="25614">
       <class name="com.TestCases.VerifyRecipeTotalCostFromSupplier">
-        <test-method signature="RecipeTotalCostSupplier()[pri:0, instance:com.TestCases.VerifyRecipeTotalCostFromSupplier@5b94b04d]" started-at="2018-12-06T11:23:10Z" name="RecipeTotalCostSupplier" finished-at="2018-12-06T11:23:36Z" duration-ms="26663" status="FAIL">
+        <test-method signature="RecipeTotalCostSupplier()[pri:0, instance:com.TestCases.VerifyRecipeTotalCostFromSupplier@5b94b04d]" started-at="2018-12-07T10:23:22Z" name="RecipeTotalCostSupplier" finished-at="2018-12-07T10:23:42Z" duration-ms="20537" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[3]/div[3]/div[3]/div/div"}
@@ -387,8 +354,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ucreate73', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:38751}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: cc6560d30fcde8384b7bccb42a3cea13
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:41329}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 1759a4d877fc6026cf8b957901a25ecf
 *** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[3]/div[3]/div[3]/div/div}]]>
             </message>
             <full-stacktrace>
@@ -400,8 +367,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ucreate73', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:38751}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: cc6560d30fcde8384b7bccb42a3cea13
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:41329}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 1759a4d877fc6026cf8b957901a25ecf
 *** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[3]/div[3]/div[3]/div/div}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -467,18 +434,18 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
             </line>
           </reporter-output>
         </test-method> <!-- RecipeTotalCostSupplier -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestCases.VerifyRecipeTotalCostFromSupplier@5b94b04d]" started-at="2018-12-06T11:23:36Z" name="teardown" finished-at="2018-12-06T11:23:42Z" duration-ms="5081" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestCases.VerifyRecipeTotalCostFromSupplier@5b94b04d]" started-at="2018-12-07T10:23:42Z" name="teardown" finished-at="2018-12-07T10:23:47Z" duration-ms="5076" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.TestCases.VerifyRecipeTotalCostFromSupplier -->
     </test> <!-- VerifyCreateRecipeFinalCost -->
-    <test started-at="2018-12-06T11:23:42Z" name="VerifyFinalizeQuoteBuyer" finished-at="2018-12-06T11:24:05Z" duration-ms="23006">
+    <test started-at="2018-12-07T10:23:47Z" name="VerifyFinalizeQuoteBuyer" finished-at="2018-12-07T10:24:12Z" duration-ms="24877">
       <class name="com.TestCases.VerifyFinalizeQuoteBuyer">
-        <test-method signature="createRecipebyBuyer()[pri:0, instance:com.TestCases.VerifyFinalizeQuoteBuyer@192c3f1e]" started-at="2018-12-06T11:23:42Z" name="createRecipebyBuyer" finished-at="2018-12-06T11:23:59Z" duration-ms="17921" status="FAIL">
+        <test-method signature="createRecipebyBuyer()[pri:0, instance:com.TestCases.VerifyFinalizeQuoteBuyer@192c3f1e]" started-at="2018-12-07T10:23:47Z" name="createRecipebyBuyer" finished-at="2018-12-07T10:24:07Z" duration-ms="19798" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="finalCosts"]"}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -486,12 +453,12 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ucreate73', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:36797}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: 61cff9f4f31033a69e5c9a293ff3483d
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]}]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:43459}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 83e3c648fb347a2bd7861e471e822e34
+*** Element info: {Using=xpath, value=//*[@id="finalCosts"]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="finalCosts"]"}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -499,9 +466,9 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ucreate73', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:36797}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: 61cff9f4f31033a69e5c9a293ff3483d
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:43459}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 83e3c648fb347a2bd7861e471e822e34
+*** Element info: {Using=xpath, value=//*[@id="finalCosts"]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -521,8 +488,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy9.click(Unknown Source)
-at com.pages.CreateFinalizeQuoteBuyerPage.ClickFinalizing(CreateFinalizeQuoteBuyerPage.java:15)
-at com.TestCases.VerifyFinalizeQuoteBuyer.createRecipebyBuyer(VerifyFinalizeQuoteBuyer.java:42)
+at com.pages.CreateFinalizeQuoteBuyerPage.TermsAndConditions(CreateFinalizeQuoteBuyerPage.java:34)
+at com.TestCases.VerifyFinalizeQuoteBuyer.createRecipebyBuyer(VerifyFinalizeQuoteBuyer.java:44)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -560,37 +527,41 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
             </line>
           </reporter-output>
         </test-method> <!-- createRecipebyBuyer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestCases.VerifyFinalizeQuoteBuyer@192c3f1e]" started-at="2018-12-06T11:23:59Z" name="teardown" finished-at="2018-12-06T11:24:05Z" duration-ms="5083" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestCases.VerifyFinalizeQuoteBuyer@192c3f1e]" started-at="2018-12-07T10:24:07Z" name="teardown" finished-at="2018-12-07T10:24:12Z" duration-ms="5076" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.TestCases.VerifyFinalizeQuoteBuyer -->
     </test> <!-- VerifyFinalizeQuoteBuyer -->
-    <test started-at="2018-12-06T11:24:05Z" name="VerifyEditSupplierProfile" finished-at="2018-12-06T11:25:09Z" duration-ms="64946">
+    <test started-at="2018-12-07T10:24:12Z" name="VerifyEditSupplierProfile" finished-at="2018-12-07T10:24:55Z" duration-ms="43149">
       <class name="com.TestCases.VerifyEditSupplierProfile">
-        <test-method signature="EditSupplierPage()[pri:0, instance:com.TestCases.VerifyEditSupplierProfile@5c671d7f]" started-at="2018-12-06T11:24:05Z" name="EditSupplierPage" finished-at="2018-12-06T11:25:04Z" duration-ms="59858" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="EditSupplierPage()[pri:0, instance:com.TestCases.VerifyEditSupplierProfile@5c671d7f]" started-at="2018-12-07T10:24:12Z" name="EditSupplierPage" finished-at="2018-12-07T10:24:50Z" duration-ms="38069" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[unknown error: Element <button class="editProfile_smallButton">...</button> is not clickable at point (1406, 920). Other element would receive the click: <div data-reactroot="" class="c011 c012 popupoverlay">...</div>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div[2]/div/div[4]/div[1]/div[1]/div/button"}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ucreate73', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:43355}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: 2701c9eddda6cdeb5cdb9af58b2a3d87]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:32779}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 40c8a93dca714f2c7cf9fd0fb3b7a40e
+*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div[2]/div/div[4]/div[1]/div[1]/div/button}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <button class="editProfile_smallButton">...</button> is not clickable at point (1406, 920). Other element would receive the click: <div data-reactroot="" class="c011 c012 popupoverlay">...</div>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div[2]/div/div[4]/div[1]/div[1]/div/button"}
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ucreate73', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-42-generic', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:43355}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
-Session ID: 2701c9eddda6cdeb5cdb9af58b2a3d87
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:32779}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 40c8a93dca714f2c7cf9fd0fb3b7a40e
+*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div[2]/div/div[4]/div[1]/div[1]/div/button}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -603,15 +574,15 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy9.click(Unknown Source)
-at com.pages.CreateEditSupplierPage.EditAwards(CreateEditSupplierPage.java:109)
-at com.TestCases.VerifyEditSupplierProfile.EditSupplierPage(VerifyEditSupplierProfile.java:50)
+at com.pages.CreateEditSupplierPage.EditStandard(CreateEditSupplierPage.java:48)
+at com.TestCases.VerifyEditSupplierProfile.EditSupplierPage(VerifyEditSupplierProfile.java:44)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -642,7 +613,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Supplier logged in to his account]]>
@@ -650,67 +621,113 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
             <line>
               <![CDATA[Supplier profile summary edited]]>
             </line>
-            <line>
-              <![CDATA[Supplier profile standards qualification edited]]>
-            </line>
           </reporter-output>
         </test-method> <!-- EditSupplierPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestCases.VerifyEditSupplierProfile@5c671d7f]" started-at="2018-12-06T11:25:04Z" name="teardown" finished-at="2018-12-06T11:25:09Z" duration-ms="5086" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestCases.VerifyEditSupplierProfile@5c671d7f]" started-at="2018-12-07T10:24:50Z" name="teardown" finished-at="2018-12-07T10:24:55Z" duration-ms="5078" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.TestCases.VerifyEditSupplierProfile -->
     </test> <!-- VerifyEditSupplierProfile -->
-    <test started-at="2018-12-06T11:25:09Z" name="VerifyHomepageUI" finished-at="2018-12-06T11:25:48Z" duration-ms="38189">
+    <test started-at="2018-12-07T10:24:55Z" name="VerifyHomepageUI" finished-at="2018-12-07T10:25:22Z" duration-ms="26217">
       <class name="UITesting.HomePageUI">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-06T11:25:09Z" name="launchBrowser" finished-at="2018-12-06T11:25:47Z" duration-ms="37880" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-07T10:24:55Z" name="launchBrowser" finished-at="2018-12-07T10:25:21Z" duration-ms="25846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="getCssValue_TextFontSize_haveyour()[pri:5, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-06T11:25:47Z" name="getCssValue_TextFontSize_haveyour" finished-at="2018-12-06T11:25:47Z" duration-ms="39" status="PASS">
+        <test-method signature="getCssValue_TextFontSize_haveyour()[pri:5, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-07T10:25:21Z" name="getCssValue_TextFontSize_haveyour" finished-at="2018-12-07T10:25:21Z" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCssValue_TextFontSize_haveyour -->
-        <test-method signature="getCssValue__TextFontFamily_haveyour()[pri:6, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-06T11:25:47Z" name="getCssValue__TextFontFamily_haveyour" finished-at="2018-12-06T11:25:47Z" duration-ms="31" status="PASS">
+        <test-method signature="getCssValue__TextFontFamily_haveyour()[pri:6, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-07T10:25:21Z" name="getCssValue__TextFontFamily_haveyour" finished-at="2018-12-07T10:25:21Z" duration-ms="35" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCssValue__TextFontFamily_haveyour -->
-        <test-method signature="getCssValue_TextColor_haveyour()[pri:7, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-06T11:25:47Z" name="getCssValue_TextColor_haveyour" finished-at="2018-12-06T11:25:47Z" duration-ms="28" status="PASS">
+        <test-method signature="getCssValue_TextColor_haveyour()[pri:7, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-07T10:25:21Z" name="getCssValue_TextColor_haveyour" finished-at="2018-12-07T10:25:21Z" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCssValue_TextColor_haveyour -->
-        <test-method signature="getCssValue_TextFontSize_findsupplier()[pri:8, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-06T11:25:47Z" name="getCssValue_TextFontSize_findsupplier" finished-at="2018-12-06T11:25:48Z" duration-ms="37" status="PASS">
+        <test-method signature="getCssValue_TextFontSize_findsupplier()[pri:8, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-07T10:25:21Z" name="getCssValue_TextFontSize_findsupplier" finished-at="2018-12-07T10:25:21Z" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCssValue_TextFontSize_findsupplier -->
-        <test-method signature="getCssValue__TextFontFamily_findsupplier()[pri:9, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-06T11:25:48Z" name="getCssValue__TextFontFamily_findsupplier" finished-at="2018-12-06T11:25:48Z" duration-ms="34" status="PASS">
+        <test-method signature="getCssValue__TextFontFamily_findsupplier()[pri:9, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-07T10:25:21Z" name="getCssValue__TextFontFamily_findsupplier" finished-at="2018-12-07T10:25:21Z" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCssValue__TextFontFamily_findsupplier -->
-        <test-method signature="getCssValue_TextColor_findsupplier()[pri:10, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-06T11:25:48Z" name="getCssValue_TextColor_findsupplier" finished-at="2018-12-06T11:25:48Z" duration-ms="31" status="PASS">
+        <test-method signature="getCssValue_TextColor_findsupplier()[pri:10, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-07T10:25:21Z" name="getCssValue_TextColor_findsupplier" finished-at="2018-12-07T10:25:21Z" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCssValue_TextColor_findsupplier -->
-        <test-method signature="getCssValue_TextFontSize_contract()[pri:11, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-06T11:25:48Z" name="getCssValue_TextFontSize_contract" finished-at="2018-12-06T11:25:48Z" duration-ms="39" status="PASS">
+        <test-method signature="getCssValue_TextFontSize_contract()[pri:11, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-07T10:25:21Z" name="getCssValue_TextFontSize_contract" finished-at="2018-12-07T10:25:21Z" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCssValue_TextFontSize_contract -->
-        <test-method signature="getCssValue__TextFontFamily_contract()[pri:12, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-06T11:25:48Z" name="getCssValue__TextFontFamily_contract" finished-at="2018-12-06T11:25:48Z" duration-ms="33" status="PASS">
+        <test-method signature="getCssValue__TextFontFamily_contract()[pri:12, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-07T10:25:21Z" name="getCssValue__TextFontFamily_contract" finished-at="2018-12-07T10:25:21Z" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCssValue__TextFontFamily_contract -->
-        <test-method signature="getCssValue_TextColor_contract()[pri:13, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-06T11:25:48Z" name="getCssValue_TextColor_contract" finished-at="2018-12-06T11:25:48Z" duration-ms="31" status="PASS">
+        <test-method signature="getCssValue_TextColor_contract()[pri:13, instance:UITesting.HomePageUI@3e96bacf]" started-at="2018-12-07T10:25:21Z" name="getCssValue_TextColor_contract" finished-at="2018-12-07T10:25:22Z" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCssValue_TextColor_contract -->
       </class> <!-- UITesting.HomePageUI -->
     </test> <!-- VerifyHomepageUI -->
-    <test started-at="2018-12-06T11:25:48Z" name="VerifyLoginScenarios" finished-at="2018-12-06T11:26:11Z" duration-ms="23347">
+    <test started-at="2018-12-07T10:25:22Z" name="VerifyLoginScenarios" finished-at="2018-12-07T10:25:40Z" duration-ms="18444">
       <class name="com.TestCases.VerifyLoginScenarios">
-        <test-method signature="loginScenarios()[pri:0, instance:com.TestCases.VerifyLoginScenarios@60015ef5]" started-at="2018-12-06T11:25:48Z" name="loginScenarios" finished-at="2018-12-06T11:26:11Z" duration-ms="23345" status="PASS">
+        <test-method signature="loginScenarios()[pri:0, instance:com.TestCases.VerifyLoginScenarios@2f54a33d]" started-at="2018-12-07T10:25:22Z" name="loginScenarios" finished-at="2018-12-07T10:25:38Z" duration-ms="16370" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [] but found [Please enter email address]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [] but found [Please enter email address]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.pages.CreateLoginscenarios.VerifyRequiredEmailValidation(CreateLoginscenarios.java:70)
+at com.TestCases.VerifyLoginScenarios.loginScenarios(VerifyLoginScenarios.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TestCases.VerifyLoginScenarios@2f54a33d]" started-at="2018-12-07T10:25:38Z" name="tearDown" finished-at="2018-12-07T10:25:40Z" duration-ms="2073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.TestCases.VerifyLoginScenarios -->
     </test> <!-- VerifyLoginScenarios -->
   </suite> <!-- Workflow UBREW -->
