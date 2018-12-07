@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Workflow_UBREW" class="navigator-link">
-              <span class="suite-name border-failed">Workflow UBREW</span>
+              <span class="suite-name border-passed">Workflow UBREW</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Workflow_UBREW" class="hide-methods failed suite-Workflow_UBREW"> (hide)</a> <!-- hide-methods failed suite-Workflow_UBREW -->
-                      <a href="#" panel-name="suite-Workflow_UBREW" class="show-methods failed suite-Workflow_UBREW"> (show)</a> <!-- show-methods failed suite-Workflow_UBREW -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Workflow_UBREW" class="hide-methods passed suite-Workflow_UBREW"> (hide)</a> <!-- hide-methods passed suite-Workflow_UBREW -->
+                      <a href="#" panel-name="suite-Workflow_UBREW" class="show-methods passed suite-Workflow_UBREW"> (show)</a> <!-- show-methods passed suite-Workflow_UBREW -->
                     </span>
-                    <div class="method-list-content failed suite-Workflow_UBREW">
+                    <div class="method-list-content passed suite-Workflow_UBREW">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Workflow_UBREW" title="com.TestCases.VerifyLoginScenarios" class="method navigator-link" hash-for-method="loginScenarios">loginScenarios</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Workflow_UBREW -->
+                    </div> <!-- method-list-content passed suite-Workflow_UBREW -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Workflow_UBREW" class="panel Workflow_UBREW">
-          <div class="suite-Workflow_UBREW-class-failed">
+          <div class="suite-Workflow_UBREW-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.TestCases.VerifyLoginScenarios</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,15 +128,10 @@
                   <a name="loginScenarios">
                   </a> <!-- loginScenarios -->
                   <span class="method-name">loginScenarios</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [] but found [Please enter email address]
-	at com.pages.CreateLoginscenarios.VerifyRequiredEmailValidation(CreateLoginscenarios.java:70)
-	at com.TestCases.VerifyLoginScenarios.loginScenarios(VerifyLoginScenarios.java:29)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Workflow_UBREW-class-failed -->
+          </div> <!-- suite-Workflow_UBREW-class-passed -->
         </div> <!-- panel Workflow_UBREW -->
         <div panel-name="test-xml-Workflow_UBREW" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -197,12 +192,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginScenarios')
 data.setCell(0, 2, 'com.TestCases.VerifyLoginScenarios')
-data.setCell(0, 3, 28669);
+data.setCell(0, 3, 30251);
 window.suiteTableData['Workflow_UBREW']= { tableData: data, tableDiv: 'times-div-Workflow_UBREW'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Workflow_UBREW">
               </div> <!-- times-div-Workflow_UBREW -->
             </div> <!-- times-div -->
@@ -230,14 +225,12 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.TestCases.VerifyLoginScenarios</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loginScenarios</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28675 ms</span>
+                <span class="method-start">30254 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
