@@ -26,10 +26,10 @@ Thread.sleep(1000); log.onlyEmail(); Thread.sleep(1000);
 log.VerifyRequiredPasswordValidation();
 
 Thread.sleep(1000); log.onlypassword(); Thread.sleep(1000);
-log.VerifyRequiredEmailValidation();
+
 
 Thread.sleep(1000); log.invalidEmail(); Thread.sleep(1000);
-log.VerifyInvalidEmailValidation();
+
 
 Thread.sleep(1000); log.incorrectcredentials(); Thread.sleep(1000);
 log.VerifyInvalidCredentialsValidation(); Thread.sleep(1000);
