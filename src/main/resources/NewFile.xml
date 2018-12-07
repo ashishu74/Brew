@@ -8,9 +8,9 @@
 	</listeners>
 
 	 
-   <test name="VerifyLoginScenarios">
+   <test name="VerifyHomepageUI">
     <classes>
-     <class name="com.TestCases.VerifyLoginScenarios"/>
+     <class name="UITesting.HomePageUI"/>
     </classes>
    </test>
 
