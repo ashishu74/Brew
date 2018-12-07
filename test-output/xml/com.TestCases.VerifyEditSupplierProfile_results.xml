@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="VerifyEditSupplierProfile"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="136.843">
+  <properties />
+  
+  
+            <testcase name="EditSupplierPage" time="136.843" classname="com.TestCases.VerifyEditSupplierProfile" />
+      
+</testsuite>

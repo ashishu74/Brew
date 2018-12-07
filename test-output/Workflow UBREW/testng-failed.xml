@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Workflow UBREW]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="VerifyCreateTender(failed)">
+    <classes>
+      <class name="com.TestCases.VerifyCreateTenderfromBuyer">
+        <methods>
+          <include name="teardown"/>
+          <include name="createTenderbyBuyer"/>
+        </methods>
+      </class> <!-- com.TestCases.VerifyCreateTenderfromBuyer -->
+    </classes>
+  </test> <!-- VerifyCreateTender(failed) -->
+  <test thread-count="5" name="VerifyCreateRecipe(failed)">
+    <classes>
+      <class name="com.TestCases.VerifyCreateRecipeFromBuyer">
+        <methods>
+          <include name="teardown"/>
+          <include name="createRecipebyBuyer"/>
+        </methods>
+      </class> <!-- com.TestCases.VerifyCreateRecipeFromBuyer -->
+    </classes>
+  </test> <!-- VerifyCreateRecipe(failed) -->
+  <test thread-count="5" name="VerifyCreateRecipeFinalCost(failed)">
+    <classes>
+      <class name="com.TestCases.VerifyRecipeTotalCostFromSupplier">
+        <methods>
+          <include name="teardown"/>
+          <include name="RecipeTotalCostSupplier"/>
+        </methods>
+      </class> <!-- com.TestCases.VerifyRecipeTotalCostFromSupplier -->
+    </classes>
+  </test> <!-- VerifyCreateRecipeFinalCost(failed) -->
+  <test thread-count="5" name="VerifyFinalizeQuoteBuyer(failed)">
+    <classes>
+      <class name="com.TestCases.VerifyFinalizeQuoteBuyer">
+        <methods>
+          <include name="createRecipebyBuyer"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.TestCases.VerifyFinalizeQuoteBuyer -->
+    </classes>
+  </test> <!-- VerifyFinalizeQuoteBuyer(failed) -->
+</suite> <!-- Failed suite [Workflow UBREW] -->

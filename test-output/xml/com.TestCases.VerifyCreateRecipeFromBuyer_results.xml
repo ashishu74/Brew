@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="VerifyCreateRecipe"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="32.364">
+  <properties />
+  
+  
+            <testcase name="createRecipebyBuyer" time="32.364" classname="com.TestCases.VerifyCreateRecipeFromBuyer" />
+      
+</testsuite>
