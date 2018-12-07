@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="16.370">
+           time="28.669">
   <properties />
-            <testcase name="loginScenarios" time="16.370" classname="com.TestCases.VerifyLoginScenarios">
+            <testcase name="loginScenarios" time="28.669" classname="com.TestCases.VerifyLoginScenarios">
                 <failure type="java.lang.AssertionError"
                   message="expected [] but found [Please enter email address]"
               >
