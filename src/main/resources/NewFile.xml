@@ -13,5 +13,11 @@
      <class name="UITesting.HomePageUI"/>
     </classes>
    </test>
+	
+   <test name="VerifyLoginScenarios">
+    <classes>
+     <class name="com.TestCases.VerifyLoginScenarios"/>
+    </classes>
+   </test>
 
    </suite>
