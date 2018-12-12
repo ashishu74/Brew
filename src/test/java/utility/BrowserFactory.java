@@ -18,7 +18,7 @@ public class BrowserFactory {
 		}
 		else if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
 			/*
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("window-size=1400,800");
