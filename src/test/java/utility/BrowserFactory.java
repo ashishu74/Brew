@@ -18,10 +18,8 @@ public class BrowserFactory {
 		}
 		else if(browserName.equals("chrome"))
 		{
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-                ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--headless");
-                chromeOptions.addArguments("--no-sandbox")
+			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+			driver=(WebDriver) new ChromeDriver();
 		}		
 		driver.manage().window().maximize();
 		driver.get(url);
