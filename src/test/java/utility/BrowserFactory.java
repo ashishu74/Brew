@@ -19,13 +19,13 @@ public class BrowserFactory {
 		else if(browserName.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
-			/*
+			
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("window-size=1400,800");
 			options.addArguments("headless");
 			driver = new ChromeDriver(options);Thread.sleep(5000);
-			driver.manage().window().maximize(); Thread.sleep(2000); */
-			driver=(WebDriver) new ChromeDriver();
+			driver.manage().window().maximize(); Thread.sleep(2000); 
+			//driver=(WebDriver) new ChromeDriver();
 		}		
 		driver.manage().window().maximize();
 		driver.get(url);
