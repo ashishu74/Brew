@@ -18,7 +18,7 @@ public class BrowserFactory {
 		}
 		else if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
 			driver=(WebDriver) new ChromeDriver();
 		}		
 		driver.manage().window().maximize();
