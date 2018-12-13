@@ -16,7 +16,7 @@ public By Contract = By.xpath("//*[@id=\"app\"]/div/div[2]/section[1]/div[1]/div
 
 @BeforeClass
 public void launchBrowser() throws Exception {
-	System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver");
+	System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 	ChromeOptions options = new ChromeOptions();
 	options.addArguments("window-size=1400,800");
 	options.addArguments("headless");
