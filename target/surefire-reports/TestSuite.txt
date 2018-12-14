@@ -1,21 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 28.33 sec <<< FAILURE! - in TestSuite
-loginScenarios(com.TestCases.VerifyLoginScenarios)  Time elapsed: 0.021 sec  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: /usr/bin/chromedriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:588)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:33)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:139)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:335)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at utility.BrowserFactory.startBrowser(BrowserFactory.java:22)
-	at com.TestCases.VerifyLoginScenarios.loginScenarios(VerifyLoginScenarios.java:17)
-
-tearDown(com.TestCases.VerifyLoginScenarios)  Time elapsed: 2.022 sec  <<< FAILURE!
-java.lang.NullPointerException: null
-	at com.TestCases.VerifyLoginScenarios.tearDown(VerifyLoginScenarios.java:44)
-
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.103 sec - in TestSuite
