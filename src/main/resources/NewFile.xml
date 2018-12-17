@@ -13,6 +13,12 @@
      <class name="UITesting.HomePageUI"/>
     </classes>
    </test>
+
+  <test name="VerifyPricingUI">
+    <classes>
+     <class name="UITesting.PricingUI"/>
+    </classes>
+   </test>
 	
    <test name="VerifyLoginScenarios">
     <classes>
