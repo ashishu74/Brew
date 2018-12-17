@@ -26,4 +26,11 @@
     </classes>
    </test>
 
+   <test name="VerifyEditSupplierProfile">
+    <classes>
+     <class name="com.TestCases.VerifyEditSupplierProfile"/>
+    </classes>
+   </test>
+
+
    </suite>
