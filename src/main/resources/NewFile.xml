@@ -18,19 +18,19 @@
     <classes>
      <class name="UITesting.PricingUI"/>
     </classes>
-   </test>
+  </test>
 	
    <test name="VerifyLoginScenarios">
     <classes>
      <class name="com.TestCases.VerifyLoginScenarios"/>
     </classes>
-   </test>
+  </test>
 
-   <test name="VerifyEditSupplierProfile">
+  <test name="VerifyEditSupplierProfile">
     <classes>
      <class name="com.TestCases.VerifyEditSupplierProfile"/>
     </classes>
-   </test>
+  </test>
 
 
-   </suite>
+</suite>
