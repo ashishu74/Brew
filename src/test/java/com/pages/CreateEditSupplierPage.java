@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class CreateEditSupplierPage {
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[1]/div/h3/a[1]")
+	@FindBy(how=How.XPATH,using="//*[@id="app"]/div/div[2]/div/div[2]/div/div[1]/div/a/span")
 	@CacheLookup
 	WebElement supplierprofile;
 	public void SupplierProfile() {
