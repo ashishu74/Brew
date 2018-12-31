@@ -24,6 +24,12 @@ jobs:
       - checkout
 
       # Download and cache dependencies
+
+      - restore_cache:
+          keys:
+          - v1-+-dependencies-{{ checksum "pom.xml" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
       - run: echo $JAVA
       - run: mvn dependency:go-offline
 
@@ -57,6 +63,16 @@ jobs:
           name: Run Tests
           command: |
             export DISPLAY=:99
+      - save_cache:
+          paths:
+            - ~/.m2
+          key: v1-dependencies-{{ checksum "pom.xml" }}
         
       # run tests!
       - run: mvn test
+
+      - store_artifacts:
+          path: target/surefire-reports
+          destination: tr1
+      - store_test_results:
+          path: target/surefire-reports
