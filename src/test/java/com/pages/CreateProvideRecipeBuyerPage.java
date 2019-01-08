@@ -18,15 +18,15 @@
 		}
 		//-----------------------------------------------------------------------------------------------------------------------
 		
-		@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[3]/div[2]/table/tbody/tr/td[1]")
-		@CacheLookup
+		@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div/div/div[2]/table/tbody/tr/td[2]/span")
+		@CacheLookup 
 		WebElement statusToReview;
 		public void clickStatus() {
 			statusToReview.click(); 
 		}
 		//---------------------------------------------------------------------------------------------------------------------
 		
-		@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div[3]/div[19]/input[2]")
+		@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div/div[10]/div/input[2]")
 		@CacheLookup
 		WebElement approveandproviderecipe;
 		public void approveAndProvideRecipe() {
@@ -63,7 +63,7 @@
 		*/
 		//--------------------------------------------------------------------------------------------------------------------------
 		
-		@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div[3]/div[3]/button")
+		@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div/div[3]/button")
 		@CacheLookup
 		WebElement sendtosupplier;
 		public void SendToSupplier() {

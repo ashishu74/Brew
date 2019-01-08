@@ -267,7 +267,7 @@
 	
 	//-------------------------------------------------------------------------------------------------------
 	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/table[2]/tbody/tr[1]/td[2]/span")
-	@CacheLookup
+	@CacheLookup 
 	WebElement toreview; 
 	public void toreview_tender() {
 		Assert.assertTrue(toreview.isDisplayed());
