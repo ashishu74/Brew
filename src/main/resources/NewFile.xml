@@ -34,13 +34,13 @@
 
  <test name="VerifyCreateTender">
     <classes>
-     <class name="com.testcases.VerifyCreateTenderfromBuyer"/>
+     <class name="com.TestCases.VerifyCreateTenderfromBuyer"/>
     </classes>
    </test>
    
    <test name="VerifyCreateQuote">
     <classes>
-     <class name="com.testcases.VerifyCreateQuoteFromSupplier"/>
+     <class name="com.TestCases.VerifyCreateQuoteFromSupplier"/>
     </classes>
    </test>
 
