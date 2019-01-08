@@ -103,6 +103,9 @@ public class VerifyCreateTenderfromBuyer
 		Thread.sleep(2000); tender.Select_all(); Thread.sleep(1000); 
 		tender.submitTender();Thread.sleep(4000);
 		Reporter.log("Buyer created the tender successfully");
+		System.out.println("--------------------------------------------------------------------------");
+		System.out.println("Tender created script executed");
+		System.out.println("--------------------------------------------------------------------------");
 	}
 	@AfterClass
 	public void teardown() throws Exception {

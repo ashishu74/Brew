@@ -78,7 +78,10 @@ public class VerifyEditSupplierProfile {
 	edit.EditStyles(); Thread.sleep(4000);
 	Reporter.log("Supplier profiles styles edited");
 	//edit.EditOnsitePackaging(); Thread.sleep(4000);
-}
+	System.out.println("--------------------------------------------------------------------------");
+	System.out.println("Edit supplier functionality script tested");
+        System.out.println("--------------------------------------------------------------------------");
+} 
 	@AfterClass
 	public void teardown() throws Exception {
 		Thread.sleep(5000);

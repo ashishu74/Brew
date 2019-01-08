@@ -37,11 +37,5 @@
      <class name="com.TestCases.VerifyCreateTenderfromBuyer"/>
     </classes>
    </test>
-   
-   <test name="VerifyCreateQuote">
-    <classes>
-     <class name="com.TestCases.VerifyCreateQuoteFromSupplier"/>
-    </classes>
-   </test>
 
 </suite>
