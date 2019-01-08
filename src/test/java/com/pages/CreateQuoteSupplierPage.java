@@ -270,8 +270,11 @@
 	@CacheLookup 
 	WebElement toreview; 
 	public void toreview_tender() {
-		Assert.assertTrue(toreview.isDisplayed());
-		toreview.click();
+	WebDriver drv =null;
+	WebDriverWait wait = new WebDriverWait(drv,30);
+	wait.until(ExpectedConditions.visibilityOfElementLocated((By) toreview));
+	Assert.assertTrue(toreview.isDisplayed());
+	toreview.click();
 	}
 	
 	//--------------------------------------------------------------------------------------------------------
