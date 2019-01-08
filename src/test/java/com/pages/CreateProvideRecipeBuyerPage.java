@@ -22,10 +22,7 @@
 		@CacheLookup 
 		WebElement statusToReview;
 		public void clickStatus() {
-		WebDriver drv = null;
-		WebDriverWait wait = new WebDriverWait(drv,30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated((By) statusToReview));	 
-		statusToReview.click(); 
+			statusToReview.click(); 
 		}
 		//---------------------------------------------------------------------------------------------------------------------
 		
