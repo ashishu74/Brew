@@ -257,7 +257,16 @@
 	}
 	
 	//-------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[1]")
+		@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[1]/ul/li[2]/a")
+		@CacheLookup
+		WebElement receivedtender; 
+		public void receivedTender() {
+			Assert.assertTrue(receivedtender.isDisplayed());
+			receivedtender.click();
+		}
+	
+	//-------------------------------------------------------------------------------------------------------
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/table[2]/tbody/tr[1]/td[2]/span")
 	@CacheLookup
 	WebElement toreview; 
 	public void toreview_tender() {
@@ -266,7 +275,7 @@
 	}
 	
 	//--------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.CSS,using="#app > div > div.route-wrap > div > div.dashboardWrap > div > div.rightPanel > div.rightPanel_content > div > div:nth-child(3) > div.btnrow.nobdr.btnrowfixed > a.receivedtender-btn.btn.btn-green-bdr.accept-requirements")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div/div/div[3]/div/a[3]")
 	@CacheLookup
 	WebElement createquoteallreq;
 	public void createquote_allrequirement() {
@@ -275,7 +284,7 @@
 	}
 	
 	//------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[3]/div[2]/div[10]/div[10]/div[11]/div[1]/div[1]/div[1]/div/input")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div/div/div[2]/div[3]/div[3]/div[2]/div[1]/div[1]/div[1]/div/input")
 	@CacheLookup
 	WebElement priceperunit; 
 	public void Price_unit() {
@@ -284,7 +293,7 @@
 	}
 	
 	//-------------------------------------------------------------------------------------------------------------------	
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[3]/div[2]/div[10]/div[10]/div[11]/div[1]/div[1]/div[2]/input")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div/div/div[2]/div[3]/div[3]/div[2]/div[1]/div[1]/div[2]/input")
 	@CacheLookup
 	WebElement estimatedtotalcost;
 	public void Estimated_total_cost() {
@@ -293,7 +302,7 @@
 	}
 	
 	//-------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[3]/div[2]/div[15]/div/div/input")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div/div/div[2]/div[6]/div/div/input")
 	@CacheLookup
 	WebElement warehousingcost;
 
@@ -312,7 +321,7 @@
 	}
 	
 	//---------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[3]/div[3]/div[2]/textarea")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div/div/div[3]/div[2]/textarea")
 	@CacheLookup
 	WebElement commentBuyer;
 	public void comments_to_buyer() {
@@ -322,7 +331,7 @@
 	
 	//--------------------------------------------------------------------------------------------
 	
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[3]/div[4]/a")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div/div/div[4]/a")
 	@CacheLookup
 	WebElement submitquote;
 	public void submit_quote() {

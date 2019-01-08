@@ -39,7 +39,7 @@ public class CreateTenderfromBuyerPage {
 		}
 	
 	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div/div/a")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div/a")
 	@CacheLookup
 	WebElement newtender;
 	public void newTender() {
@@ -93,7 +93,7 @@ public class CreateTenderfromBuyerPage {
 	@CacheLookup
 	WebElement dateto; 
 	
-	@FindBy(how=How.XPATH,using="//*[@id=\"date-picker\"]/div/div[2]/div/div[2]/div[2]/div[5]/div[4]")
+	@FindBy(how=How.XPATH,using="//*[@id=\"date-picker\"]/div/div[2]/div/div[2]/div[2]/div[5]/div[6]")
 	@CacheLookup
 	WebElement date1;
 	public void submitQuoteBy() {
@@ -108,7 +108,7 @@ public class CreateTenderfromBuyerPage {
 	@CacheLookup
 	WebElement datefrom;
 	
-	@FindBy(how=How.XPATH,using="//*[@id=\"date-picker\"]/div/div[2]/div/div[2]/div[2]/div[5]/div[6]")
+	@FindBy(how=How.XPATH,using="//*[@id=\"date-picker\"]/div/div[2]/div/div[2]/div[2]/div[5]/div[7]")
 	@CacheLookup
 	WebElement date2;
 	

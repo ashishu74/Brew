@@ -32,5 +32,16 @@
     </classes>
   </test>
 
+ <test name="VerifyCreateTender">
+    <classes>
+     <class name="com.testcases.VerifyCreateTenderfromBuyer"/>
+    </classes>
+   </test>
+   
+   <test name="VerifyCreateQuote">
+    <classes>
+     <class name="com.testcases.VerifyCreateQuoteFromSupplier"/>
+    </classes>
+   </test>
 
 </suite>
