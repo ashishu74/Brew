@@ -1,4 +1,4 @@
-	package com.testcases;
+	package com.TestCases;
 	
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.support.PageFactory;

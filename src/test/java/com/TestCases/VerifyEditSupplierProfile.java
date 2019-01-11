@@ -1,4 +1,4 @@
-	package com.testcases;
+	package com.TestCases;
 	import java.util.concurrent.TimeUnit;
 	
 	import org.openqa.selenium.WebDriver;
