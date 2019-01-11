@@ -5,7 +5,7 @@
   <listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" /> 
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-	</listeners>
+ </listeners>
 	 
    <test name="VerifyHomepageUI">
     <classes>
@@ -17,7 +17,7 @@
     <classes>
      <class name="UITesting.PricingUI"/>
     </classes>
-   </test>
+  </test>
 	
    <test name="VerifyLoginScenarios">
     <classes>
@@ -37,4 +37,4 @@
     </classes>
    </test>
    
-   </suite>
+</suite>
