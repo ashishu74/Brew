@@ -1,11 +1,11 @@
-package com.pages;
+	package com.pages;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
+	import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.support.CacheLookup;
+	import org.openqa.selenium.support.FindBy;
+	import org.openqa.selenium.support.How;
 
-public class CreateFinalizeQuoteBuyerPage {
+	public class CreateFinalizeQuoteBuyerPage {
 
 	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]")
 	@CacheLookup
