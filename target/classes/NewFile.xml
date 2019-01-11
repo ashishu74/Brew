@@ -6,13 +6,47 @@
 		<listener class-name="org.uncommons.reportng.HTMLReporter" /> 
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
-
 	 
    <test name="VerifyHomepageUI">
     <classes>
      <class name="UITesting.HomePageUI"/>
     </classes>
    </test>
-	
 
+  <test name="VerifyPricingUI">
+    <classes>
+     <class name="UITesting.PricingUI"/>
+    </classes>
+   </test>
+	
+   <test name="VerifyLoginScenarios">
+    <classes>
+     <class name="com.TestCases.VerifyLoginScenarios"/>
+    </classes>
+   </test>
+
+   <test name="VerifyEditSupplierProfile">
+    <classes>
+     <class name="com.TestCases.VerifyEditSupplierProfile"/>
+    </classes>
+   </test>
+   
+   <test name="VerifyCreateTender">
+    <classes>
+     <class name="com.TestCases.VerifyCreateTenderfromBuyer"/>
+    </classes>
+   </test>
+   
+   <test name="VerifyCreateQuote">
+    <classes>
+     <class name="com.TestCases.VerifyCreateQuoteFromSupplier"/>
+    </classes>
+   </test>
+
+	<test name="VerifyCreateRecipe">
+    <classes>
+     <class name="com.TestCases.VerifyCreateRecipeFromBuyer"/>
+    </classes>
+   </test>
+   
    </suite>

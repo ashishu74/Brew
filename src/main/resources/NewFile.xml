@@ -9,43 +9,55 @@
 	 
    <test name="VerifyHomepageUI">
     <classes>
-     <class name="UITesting.HomePageUI"/>
+     <class name="uitesting.HomePageUI"/>
     </classes>
    </test>
 
   <test name="VerifyPricingUI">
     <classes>
-     <class name="UITesting.PricingUI"/>
+     <class name="uitesting.PricingUI"/>
     </classes>
    </test>
 	
    <test name="VerifyLoginScenarios">
     <classes>
-     <class name="com.TestCases.VerifyLoginScenarios"/>
+     <class name="com.testcases.VerifyLoginScenarios"/>
     </classes>
    </test>
 
    <test name="VerifyEditSupplierProfile">
     <classes>
-     <class name="com.TestCases.VerifyEditSupplierProfile"/>
+     <class name="com.testcases.VerifyEditSupplierProfile"/>
     </classes>
    </test>
    
    <test name="VerifyCreateTender">
     <classes>
-     <class name="com.TestCases.VerifyCreateTenderfromBuyer"/>
+     <class name="com.testcases.VerifyCreateTenderfromBuyer"/>
     </classes>
    </test>
    
    <test name="VerifyCreateQuote">
     <classes>
-     <class name="com.TestCases.VerifyCreateQuoteFromSupplier"/>
+     <class name="com.testcases.VerifyCreateQuoteFromSupplier"/>
     </classes>
    </test>
 
 	<test name="VerifyCreateRecipe">
     <classes>
-     <class name="com.TestCases.VerifyCreateRecipeFromBuyer"/>
+     <class name="com.testcases.VerifyCreateRecipeFromBuyer"/>
+    </classes>
+   </test>
+	
+	<test name="VerifyCreateRecipeTotalCost">
+    <classes>
+     <class name="com.testcases.VerifyRecipeTotalCostFromSupplier"/>
+    </classes>
+   </test>
+   
+   <test name="VerifyFinalizeQuote">
+    <classes>
+     <class name="com.testcases.VerifyFinalizeQuoteBuyer"/>
     </classes>
    </test>
    
