@@ -159,7 +159,7 @@
 	WebElement saveawards; 
 	public void SaveAward() throws Exception {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div[2]/button[1]")));
-		saveawards.click(); Thread.sleep(500);
+		saveawards.click(); Thread.sleep(1000);
 	}
 	
 	//----------------------------------------------------------------------------------------------------------------------------
