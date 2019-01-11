@@ -1,4 +1,4 @@
-package UITesting;
+package uitesting;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,12 +16,12 @@ public By Contract = By.xpath("//*[@id=\"app\"]/div/div[2]/section[1]/div[1]/div
 
 @BeforeClass
 public void launchBrowser() throws Exception {
-	System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+	System.setProperty("webdriver.chrome.driver","/home/ucreate-66/eclipse-workspace/brew/Drivers/chromedriver");
 	ChromeOptions options = new ChromeOptions();
 	options.addArguments("window-size=1400,800");
 	options.addArguments("headless");
-	driver = new ChromeDriver(options);Thread.sleep(5000);
-	driver.manage().window().maximize(); Thread.sleep(2000);
+	driver = new ChromeDriver(options);
+	driver.manage().window().maximize(); 
 	driver.get("https://brewbroker-react.herokuapp.com");
 }
 
