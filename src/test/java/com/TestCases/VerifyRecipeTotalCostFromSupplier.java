@@ -1,4 +1,4 @@
-package com.TestCases;
+package com.testcases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -44,6 +44,7 @@ public class VerifyRecipeTotalCostFromSupplier {
 	Reporter.log("Supplier moved to dashboard");
 	
 	CreateRecipeFinalCostSupplierPage recipe = PageFactory.initElements(driver, CreateRecipeFinalCostSupplierPage.class);
+	Thread.sleep(1000); recipe.Received_tender(); Thread.sleep(1000);
 	Thread.sleep(3000); recipe.SubmitFinalCost(); Thread.sleep(3000);
 	Reporter.log("Supplier added ingredients cost");
 	

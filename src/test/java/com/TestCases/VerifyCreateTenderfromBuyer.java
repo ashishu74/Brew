@@ -1,10 +1,14 @@
 /**
  * 
  */
-package com.TestCases;
+package com.testcases;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
@@ -18,98 +22,104 @@ public class VerifyCreateTenderfromBuyer
 	
 	WebDriver driver;
 	
-	@Test
+	@Test(priority=2)
 	public void createTenderbyBuyer() throws Exception
 	{
-		
-		//Start the browser.
 		driver=BrowserFactory.startBrowser("chrome","http://brewbroker-react.herokuapp.com");
 		Reporter.log("Browser launched");
 		
-		/*====================================================login BrewBroker Buyer ===================================================================*/
-		
-		//Created Page Object using Page Factory for Login.
 		BuyerSignInPage signin=PageFactory.initElements(driver, BuyerSignInPage.class);
 		
-		/*===========================Buyer Login====================================================*/
 		signin.clickonLoginhomepage();	
 		Reporter.log("Login form opened");
-		signin.enterEmail("ashishbuyeruser@yopmail.com");
+		signin.enterEmail("ashishbuyer01@yopmail.com");
 		signin.enterPassword("@Test1234");
 		signin.clickLoginButton();		
-		Thread.sleep(3000);
 		Reporter.log("Buyer logged in to brewbroker");
+		
+		
 		CreateTenderfromBuyerPage tender=PageFactory.initElements(driver, CreateTenderfromBuyerPage.class);
 		
-		/*===========================Step One ====================================================*/
-		Thread.sleep(2000); tender.newTender(); Thread.sleep(2000);
-		Thread.sleep(2000); tender.nameOfTender(); Thread.sleep(1000);
-		Thread.sleep(2000); tender.descriptionTender(); Thread.sleep(1000);
-		Thread.sleep(2000); tender.tellUsMore(); Thread.sleep(1000);
-		Thread.sleep(2000); tender.supplierCommunication(); Thread.sleep(1000);
-		Thread.sleep(2000); tender.contractTypeQuarterly(); Thread.sleep(1000);
-		Thread.sleep(2000); tender.submitQuoteBy(); Thread.sleep(1000);
-		Thread.sleep(2000); tender.deliverContractBy(); Thread.sleep(1000);
+		tender.newTender(); 
+		tender.nextForm(); 
+		tender.nameOfTender(); 
+		tender.descriptionTender(); 
+		tender.tellUsMore();
+		tender.supplierCommunication(); 
+		tender.contractTypeQuarterly(); 
+		tender.submitQuoteBy();
+		tender.deliverContractBy();
 		Reporter.log("Step one tender details are filled");
-		Thread.sleep(1000); tender.nextForm();  Thread.sleep(3000);
+		tender.nextForm();  
 		
-		/*============================================ Step Two ==============================================*/
 		Reporter.log("Buyer moved to step two create tender");
-		tender.Ales(); Thread.sleep(1000);
-		tender.beerStyle(); Thread.sleep(1000);
-		tender.Brandname(); Thread.sleep(1000);
-		tender.descripTion(); Thread.sleep(1000);
-		tender.ABV(); Thread.sleep(1000);
-		tender.spRequirement(); Thread.sleep(1000);
-		tender.finish(); Thread.sleep(1000);
-		tender.volume_ales(); Thread.sleep(1000);
-		tender.container_type(); Thread.sleep(1000);
-		tender.size_type(); Thread.sleep(1000); 
-		tender.color_type(); Thread.sleep(1000);
-		tender.shelflife_type(); Thread.sleep(1000);
-		tender.labelling_type(); Thread.sleep(1000);
-		tender.case_type(); Thread.sleep(1000);
-		tender.case_size(); Thread.sleep(1000);
-		tender.Necklabel(); Thread.sleep(1000);
-		tender.continue_step_three(); Thread.sleep(1000);
+		tender.continue_step_three(); 
+		tender.Ales(); 
+		tender.beerStyle(); 
+		tender.Brandname(); 
+		tender.descripTion(); 
+		tender.ABV(); 
+		tender.spRequirement(); 
+		tender.finish(); 
+		tender.volume_ales(); 
+		tender.container_type(); 
+		tender.size_type();  
+		tender.color_type(); 
+		tender.shelflife_type(); 
+		tender.labelling_type(); 
+		tender.case_type(); 
+		tender.case_size(); 
+		tender.Necklabel(); 
+		tender.continue_step_three(); 
 		
-		/*=================================Step Four=========================================================================*/
 		Reporter.log("Create tender step four buyer moved");
-		Thread.sleep(2000); tender.duty(); Thread.sleep(2000);
-		tender.duty_continue(); Thread.sleep(2000);
+		tender.duty(); 
+		tender.duty_continue(); 
 		Reporter.log("Buyer completed create tender step four");
 	
-		
-		/*====================================Step Five========================================================================*/
-		tender.arrange_collection(); Thread.sleep(1000); 
-		tender.storage_click(); Thread.sleep(1000); 
-		tender.ambient_click(); Thread.sleep(1000); 
-		tender.duration_click(); Thread.sleep(1000); 
-		tender.stepfive_sontinue(); Thread.sleep(2000);
+		tender.arrange_collection();  
+		tender.storage_click();  
+		tender.ambient_click();  
+		tender.duration_click();  
+		tender.stepfive_sontinue(); 
 		Reporter.log("create tender step five complted");
 		
-		/*===============================================Step Six==================================================================*/
 		Reporter.log("Buyer moved create tender step six");
-		tender.standards(); Thread.sleep(1000); 
-		tender.qualifications(); Thread.sleep(1000); 
-		tender.stepsix_continue(); Thread.sleep(1000); 
+		tender.standards();  
+		tender.qualifications();  
+		tender.stepsix_continue();  
 		Reporter.log("Create tender step six completed");
 		
-		/*================================================Step Seven=====================================================*/		
-		Thread.sleep(2000); tender.continue_step_seven();Thread.sleep(2000);
+		tender.continue_step_seven();
 		Reporter.log("create tender step seven completed");
-		
-		/*================================================Step Eight=====================================================*/	
-		Thread.sleep(2000); tender.Select_all(); Thread.sleep(1000); 
+	
+		tender.Select_all();  
 		tender.submitTender();Thread.sleep(4000);
 		Reporter.log("Buyer created the tender successfully");
+		
 		System.out.println("--------------------------------------------------------------------------");
-		System.out.println("Tender created script executed");
-		System.out.println("--------------------------------------------------------------------------");
+		System.out.println("Tender created successfully");
 	}
+	
+	@Test (priority=2)
+	public void scriptPassedorFailed() {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div/input")));
+		boolean status = element.isDisplayed();
+		if (status) {
+			System.out.println("===== Tender create script passed ======");
+			System.out.println("--------------------------------------------------------------------------");
+		} else {
+			System.out.println("===== Tender created script failed ======");
+			System.out.println("--------------------------------------------------------------------------");
+		}
+		
+	}
+
 	@AfterClass
 	public void teardown() throws Exception {
 		Thread.sleep(5000);
 		driver.quit();
-	}
+	} 
+	
 }

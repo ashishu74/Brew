@@ -1,84 +1,82 @@
-package com.TestCases;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.Test;
-import com.pages.BuyerSignInPage;
-import com.pages.CreateQuoteSupplierPage;
-import utility.BrowserFactory;
-
-public class VerifyCreateQuoteFromSupplier {
+	package com.testcases;
 	
+	import org.openqa.selenium.By;
+//import org.openqa.selenium.By;
+	import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
+	//import org.openqa.selenium.support.ui.WebDriverWait;
+	import org.testng.Reporter;
+	import org.testng.annotations.AfterClass;
+	import org.testng.annotations.Test;
+	import com.pages.BuyerSignInPage;
+	import com.pages.CreateQuoteSupplierPage;
+	import utility.BrowserFactory;
+	
+	public class VerifyCreateQuoteFromSupplier {
+		
 	WebDriver driver;
-	@Test
-	public void createQuotebySupplier() throws Exception
-	{
 	
-	//Start the browser.
+	@Test(priority=1)
+	public void createQuotebySupplier() throws Exception {
+
 	driver=BrowserFactory.startBrowser("chrome", "http://brewbroker-react.herokuapp.com");
-	//driver.manage().timeouts().setScriptTimeout(100, TimeUnit.SECONDS);
-	
-	/*====================================================login BrewBroker Buyer ===================================================================*/
-	
-	//Created Page Object using Page Factory for Login.
 	BuyerSignInPage signin=PageFactory.initElements(driver, BuyerSignInPage.class);
 	
-	/*===========================Supplier Login====================================================*/
 	signin.clickonLoginhomepage();	
 	
-	signin.enterEmail("ashishsupplieruser@yopmail.com");
+	signin.enterEmail("ashishsupplier01@yopmail.com");
 	signin.enterPassword("@Test1234");
 	signin.clickLoginButton();		
-	Thread.sleep(3000);
+	
 	Reporter.log("Supplier member logged in to account");
 	
 	CreateQuoteSupplierPage quote=PageFactory.initElements(driver, CreateQuoteSupplierPage.class);
-	/*======================================= Step One ==============================================================*/
+
 	
 	Reporter.log("Supplier member moved to dashboard page");
-	Thread.sleep(3000); quote.toreview_tender(); Thread.sleep(3000);
-	/* ================================================ Step Two ==================================================== */
-	Thread.sleep(3000); quote.createquote_allrequirement(); Thread.sleep(3000);
+	quote.receivedTender(); 
+	quote.toreview_tender(); 
+	quote.createquote_allrequirement(); 
 	
-	/*quote.selectCountry(); Thread.sleep(4000);
-	quote.bankName(); Thread.sleep(4000);
-	quote.shortCode(); Thread.sleep(4000);
-	quote.accountNumber(); Thread.sleep(4000);
-	quote.legalNameCompany(); Thread.sleep(4000);
-	quote.companyRegistrationNumber(); Thread.sleep(4000);
-	quote.addressLineOne(); Thread.sleep(4000);
-	quote.addressLineTwo(); Thread.sleep(4000);
-	quote.addressLineThree(); Thread.sleep(4000);
-	quote.townCity(); Thread.sleep(4000);
-	quote.postalCode(); Thread.sleep(4000);
-	quote.businessOwnerFname(); Thread.sleep(4000);
-	quote.businessOwnerLname(); Thread.sleep(4000);
-	quote.DOB(); Thread.sleep(4000);
-	quote.businessAddressLineOne(); Thread.sleep(4000);
-	quote.businessAddressLineTwo(); Thread.sleep(4000);
-	quote.businessAddressLineThree(); Thread.sleep(4000);
-	quote.businessCity(); Thread.sleep(4000);
-	quote.postCode(); Thread.sleep(5000);
-	//quote.save(); Thread.sleep(4000);
-	*/
-	/*============================================ Step Three ===========================================================*/
-	
-	Thread.sleep(3000); quote.Price_unit(); Thread.sleep(3000); 
-	Thread.sleep(3000); quote.Estimated_total_cost(); Thread.sleep(3000); 
-	Thread.sleep(3000); quote.warehousing_cost(); Thread.sleep(2000);
+	quote.Price_unit();  
+	quote.comments_to_buyer_perunit();
+	quote.warehousing_cost(); 
+	quote.comments_to_buyer_warehousing();
 	Reporter.log("Supplier added warehousing cost");
-	Thread.sleep(3000); quote.comments_to_buyer(); Thread.sleep(2000);
-	Reporter.log("Supplier added comments ");
-	Thread.sleep(2000); quote.submit_quote(); Thread.sleep(3000);
-	Reporter.log("Supplier created quote successfully");
+	quote.comments_to_buyer(); 
 	
-}
+	Reporter.log("Supplier added comments ");
+	quote.submit_quote(); 
+	Reporter.log("Supplier created quote successfully");
+	System.out.println("--------------------------------------------------------------------------");
+	System.out.println("create quote script execution completed");
+	
+    }
+	
+	@Test (priority=2)
+	public void scriptPassedorFailedCreateQuote() {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div/div[1]/div")));
+		boolean status = element.isDisplayed();
+		if (status) {
+			System.out.println("===== create Quote script passed ======");
+			System.out.println("--------------------------------------------------------------------------");
+		} else {
+			System.out.println("===== Create Quote script failed ======");
+			System.out.println("--------------------------------------------------------------------------");
+		}
+		
+	}
+	
 	@AfterClass
 	public void teardown() throws Exception {
-		Thread.sleep(5000);
-		driver.quit();
-	}
+		driver.close();
+	} 
+	
 }
 

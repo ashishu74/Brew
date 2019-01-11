@@ -16,7 +16,7 @@ public class CreateFinalizeQuoteBuyerPage {
 	}
 	
 	//--------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[3]/div[1]/table/tbody/tr/td[1]")
+	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div[1]/table/tbody/tr/td[2]/span")
 	@CacheLookup
 	WebElement clicktofinalize; 
 	
@@ -36,7 +36,7 @@ public class CreateFinalizeQuoteBuyerPage {
 	
 	//--------------------------------------------------------------------------------------------------------------------------------
 	
-	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div[3]/div[2]/section[4]/div[2]/input")
+	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div[2]/div[2]/section[4]/div[2]/input")
 	@CacheLookup
 	WebElement acceptandfinalize;
 	
@@ -46,7 +46,7 @@ public class CreateFinalizeQuoteBuyerPage {
 	
 	//-------------------------------------------------------------------------------------------------------------------------------------
 	
-	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/div[3]/div[2]/div[3]/button")
+	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div[2]/div[2]/div[3]/button")
 	@CacheLookup
 	WebElement paynow;
 	
