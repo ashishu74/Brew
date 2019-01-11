@@ -72,6 +72,9 @@
 	
 	edit.EditStyles(); 
 	Reporter.log("Supplier profiles styles edited");
+	System.out.println("------------------------------------------------------------------------------------");
+	System.out.println("Edit supplier profile script executed");
+	System.out.println("------------------------------------------------------------------------------------");
 	 
 }
 	

@@ -12,21 +12,24 @@
 
 	@Test
 	public void loginScenarios() throws Exception {
-		driver = BrowserFactory.startBrowser("chrome", "https://brewbroker-react.herokuapp.com");
+	driver = BrowserFactory.startBrowser("chrome", "https://brewbroker-react.herokuapp.com");
 		
-		CreateLoginscenarios log = PageFactory.initElements(driver, CreateLoginscenarios.class);
+	CreateLoginscenarios log = PageFactory.initElements(driver, CreateLoginscenarios.class);
 		
-		log.noEmailPassword(); 
+	log.noEmailPassword(); 
 		
-		Thread.sleep(1000); log.onlyEmail(); 
+	Thread.sleep(1000); log.onlyEmail(); 
 		
-		Thread.sleep(1000); log.onlypassword();
+	Thread.sleep(1000); log.onlypassword();
 		
-		Thread.sleep(1000); log.invalidEmail();	
+	Thread.sleep(1000); log.invalidEmail();	
 		
-		// log.incorrectcredentials();
+	// log.incorrectcredentials();
 		
-		Thread.sleep(1000); log.correctcredentials(); 
+	Thread.sleep(1000); log.correctcredentials(); 
+	System.out.println("------------------------------------------------------------------------------------");
+	System.out.println("Login test case script executed");
+	System.out.println("------------------------------------------------------------------------------------");
 			
 	}
 	
