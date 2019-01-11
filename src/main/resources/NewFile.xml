@@ -9,13 +9,13 @@
 	 
    <test name="VerifyHomepageUI">
     <classes>
-     <class name="uitesting.HomePageUI"/>
+     <class name="UITesting.HomePageUI"/>
     </classes>
    </test>
 
   <test name="VerifyPricingUI">
     <classes>
-     <class name="uitesting.PricingUI"/>
+     <class name="UITesting.PricingUI"/>
     </classes>
    </test>
 	
