@@ -27,6 +27,9 @@
 		// log.incorrectcredentials();
 		
 		Thread.sleep(1000); log.correctcredentials(); 
+		System.out.println("--------------------------------------------------------------------------");
+		System.out.println("Login scenarios script executed");
+		System.out.println("--------------------------------------------------------------------------");
 			
 	}
 	
