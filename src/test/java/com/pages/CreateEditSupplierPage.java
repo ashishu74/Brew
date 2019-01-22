@@ -270,7 +270,7 @@
 	editcapacity.click();
 	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div[1]/div/div/div/input")));
 	editcapacityfield.clear();
-	editcapacityfield.sendKeys("500");
+	editcapacityfield.sendKeys("50000");
 	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div[2]/button[1]")));
 	savecapacity.click(); Thread.sleep(1000);
 	}
@@ -293,11 +293,11 @@
 		editordervolume.click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"minCapacity\"]")));
 		minbrewlength.clear();
-		minbrewlength.sendKeys("5000");
+		minbrewlength.sendKeys("100");
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"maxCapacity\"]")));
 		maxbrewlength.clear();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"maxCapacity\"]")));
-		maxbrewlength.sendKeys("8000");
+		maxbrewlength.sendKeys("10000");
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div[2]/button[1]")));
 		saveordervolume.click(); Thread.sleep(1000);
 	}

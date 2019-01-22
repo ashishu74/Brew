@@ -14,8 +14,6 @@ jobs:
     steps:
       - checkout
 
-      # Download and cache dependencies
-
       - run: echo $JAVA
       - run: mvn dependency:go-offline
 

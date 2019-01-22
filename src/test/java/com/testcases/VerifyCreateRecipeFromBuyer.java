@@ -1,4 +1,4 @@
-	package com.TestCases;	
+	package com.testcases;	
 	import org.openqa.selenium.By;
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
@@ -26,20 +26,18 @@
 	signin.clickonLoginhomepage();	
 	signin.enterEmail("ashishbuyer01@yopmail.com");
 	signin.enterPassword("@Test1234");
-	signin.clickLoginButton();		
-	Thread.sleep(3000); 
+	signin.clickLoginButton();		 
 	Reporter.log("Buyer logged in to his account to create recipe");
-
 	CreateProvideRecipeBuyerPage recipe = PageFactory.initElements(driver, CreateProvideRecipeBuyerPage.class);
 	
-	Thread.sleep(2000); recipe.ClickTender(); Thread.sleep(2000); 
-	Thread.sleep(2000); recipe.clickStatus();Thread.sleep(2000); 
-	Thread.sleep(2000); recipe.approveAndProvideRecipe(); Thread.sleep(2000); 
+	recipe.ClickTender();  
+	recipe.clickStatus(); 
+	recipe.Shortlistandprovidenotes();  
 	Reporter.log("Buyer clicked on approve and provide recipe");
 	
-	Thread.sleep(2000); recipe.textMethodsInstructions(); Thread.sleep(2000); 
+	recipe.Notestosupplier();  
 	Reporter.log("Buyer added methods and instructions");
-	Thread.sleep(2000); recipe.SendToSupplier(); Thread.sleep(2000); 
+	recipe.SendToSupplier();  
 	Reporter.log("Buyer sent recipe to supplier successfully");
 	
 	System.out.println("--------------------------------------------------------------------------");
@@ -61,11 +59,11 @@
 		}
 		
 	}
-	
+
 	@AfterClass
 	public void teardown() throws Exception {
 		Thread.sleep(5000);
-		driver.quit();
+		driver.close();
 	} 
 	
 	

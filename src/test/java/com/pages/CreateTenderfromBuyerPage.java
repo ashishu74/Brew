@@ -1,24 +1,28 @@
-	package com.pages;
+/**
+ * 
+ */
+package com.pages;
 
-	import java.util.UUID;
-	import org.openqa.selenium.By;
-	import org.openqa.selenium.WebDriver;
-	import org.openqa.selenium.WebElement;
-	import org.openqa.selenium.support.CacheLookup;
-	import org.openqa.selenium.support.FindBy;
-	import org.openqa.selenium.support.How;
-	import org.openqa.selenium.support.ui.ExpectedConditions;
-	import org.openqa.selenium.support.ui.WebDriverWait;
-	import org.testng.Assert;
+import java.util.UUID;
 
-	public class CreateTenderfromBuyerPage {
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+public class CreateTenderfromBuyerPage {
 	WebDriver driver;
 	WebDriverWait wait;
 	
 	public CreateTenderfromBuyerPage(WebDriver driver){
         this.driver = driver; 
         wait = new WebDriverWait(driver,50);
-   	}
+    }
 	
 	//----------------------------------------------------------------------------------------------------------------------------------------
 	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div/a")

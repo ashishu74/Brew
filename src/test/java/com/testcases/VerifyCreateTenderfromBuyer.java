@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.TestCases;
+package com.testcases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,14 +1,13 @@
-	package com.pages;
-	import java.util.Random;
-	import org.openqa.selenium.WebDriver;
-	import org.openqa.selenium.WebElement;
-	import org.openqa.selenium.support.CacheLookup;
-	import org.openqa.selenium.support.FindBy;
-	import org.openqa.selenium.support.How;
+package com.pages;
+import java.util.Random;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
-	public class CreateSupplierOnboarding {
+public class CreateSupplierOnboarding {
 	WebDriver driver;
-
 	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/section[2]/div/a")
 	@CacheLookup
 	WebElement joinnow;

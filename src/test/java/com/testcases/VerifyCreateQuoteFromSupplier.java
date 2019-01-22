@@ -1,11 +1,15 @@
-	package com.TestCases;
+	package com.testcases;
 	
 	import org.openqa.selenium.By;
+//import org.openqa.selenium.By;
 	import org.openqa.selenium.WebDriver;
-	import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.support.PageFactory;
-	import org.openqa.selenium.support.ui.ExpectedConditions;
-	import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
+	//import org.openqa.selenium.support.ui.WebDriverWait;
 	import org.testng.Reporter;
 	import org.testng.annotations.AfterClass;
 	import org.testng.annotations.Test;
@@ -35,7 +39,8 @@
 
 	
 	Reporter.log("Supplier member moved to dashboard page");
-	quote.receivedTender(); 
+	quote.receivedTender();
+	quote.TenderToreview();
 	quote.toreview_tender(); 
 	quote.createquote_allrequirement(); 
 	

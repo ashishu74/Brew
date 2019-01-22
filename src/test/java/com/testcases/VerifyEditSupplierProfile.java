@@ -1,4 +1,4 @@
-	package com.TestCases;
+	package com.testcases;
 	import java.util.concurrent.TimeUnit;
 	
 	import org.openqa.selenium.WebDriver;
@@ -39,6 +39,8 @@
 	edit.EditStandard(); 
 	edit.Standard(); 
 	edit.Qualification(); 
+	edit.Standard(); 
+	edit.Qualification(); 
 	edit.SaveStandardQualification(); 
 	Reporter.log("Supplier profile standards qualification edited");
 	
@@ -77,9 +79,8 @@
 	System.out.println("------------------------------------------------------------------------------------");
 	 
 }
-	
 	@AfterClass
 	public void teardown() throws Exception {
-		driver.quit();
+		driver.close();
 	}
 }

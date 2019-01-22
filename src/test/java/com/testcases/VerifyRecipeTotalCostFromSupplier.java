@@ -1,4 +1,4 @@
-package com.TestCases;
+package com.testcases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -30,10 +30,10 @@ public class VerifyRecipeTotalCostFromSupplier {
 	/*===========================Supplier Login====================================================*/
 	signin.clickonLoginhomepage();	
 	
-	signin.enterEmail("ashishsupplieruser@yopmail.com");
+	signin.enterEmail("ashishsupplier01@yopmail.com");
 	signin.enterPassword("@Test1234");
 	signin.clickLoginButton();		
-	Thread.sleep(3000);
+	
 	Reporter.log("Supplier logged in to review recipe");
 	
 	
@@ -44,22 +44,25 @@ public class VerifyRecipeTotalCostFromSupplier {
 	Reporter.log("Supplier moved to dashboard");
 	
 	CreateRecipeFinalCostSupplierPage recipe = PageFactory.initElements(driver, CreateRecipeFinalCostSupplierPage.class);
-	Thread.sleep(1000); recipe.Received_tender(); Thread.sleep(1000);
-	Thread.sleep(3000); recipe.SubmitFinalCost(); Thread.sleep(3000);
+	recipe.Received_tender(); 
+	recipe.ActiveTender();
+	recipe.SubmitFinalCost(); 
 	Reporter.log("Supplier added ingredients cost");
 	
-	Thread.sleep(3000); recipe.TotalCost(); Thread.sleep(3000);
+	recipe.TotalCost(); 
 	Reporter.log("Supplier added total cost in milestone");
 	
-	Thread.sleep(3000); recipe.AddYourComment(); Thread.sleep(3000);
+	recipe.AddYourComment(); 
 	Reporter.log("Supplier added comments");
 	
-	Thread.sleep(3000); recipe.SendToBuyer(); Thread.sleep(3000);
+	recipe.SendToBuyer(); 
 	Reporter.log("Supplier sent the recipe back to buyer successfully");
 }
+	
 	@AfterClass
 	public void teardown() throws Exception {
 		Thread.sleep(5000);
 		driver.quit();
 	}
+
 }
