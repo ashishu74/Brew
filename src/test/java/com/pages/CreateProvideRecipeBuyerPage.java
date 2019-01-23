@@ -8,14 +8,14 @@
 	import org.openqa.selenium.support.ui.ExpectedConditions;
 	import org.openqa.selenium.support.ui.WebDriverWait;
 		
-		public class CreateProvideRecipeBuyerPage {
-			WebDriver driver;
-			WebDriverWait wait;
+	public class CreateProvideRecipeBuyerPage {
+		WebDriver driver;
+		WebDriverWait wait;
 		
-		public CreateProvideRecipeBuyerPage(WebDriver driver) {
+	public CreateProvideRecipeBuyerPage(WebDriver driver) {
 			this.driver = driver; 
 	        wait = new WebDriverWait(driver,20);
-		}
+	}
 		
 		//--------------------------------------------------------------------------------------------------------------------
 		@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]")
@@ -37,11 +37,11 @@
 		}
 		//---------------------------------------------------------------------------------------------------------------------
 		
-		@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div/div[5]/div/input[2]")
+		@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div/div[5]/div/button[2]")
 		@CacheLookup
 		WebElement shortlistandprovidenotes;
 		public void Shortlistandprovidenotes() {
-			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div/div[5]/div/input[2]")));
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div/div[5]/div/button[2]")));
 			shortlistandprovidenotes.click();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------
