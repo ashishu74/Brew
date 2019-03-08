@@ -6,18 +6,6 @@
 		<listener class-name="org.uncommons.reportng.HTMLReporter" /> 
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
-	 
-  <test name="VerifyHomepageUI">
-    <classes>
-     <class name="uitesting.HomePageUI"/>
-    </classes>
-  </test>
-
-  <test name="VerifyPricingUI">
-    <classes>
-     <class name="uitesting.PricingUI"/>
-    </classes>
-  </test>
 	
   <test name="VerifyLoginScenarios">
     <classes>
@@ -36,16 +24,5 @@
      <class name="com.testcases.VerifyCreateTenderfromBuyer"/>
     </classes>
   </test>
-   
-  <test name="VerifyCreateQuote">
-    <classes>
-     <class name="com.testcases.VerifyCreateQuoteFromSupplier"/>
-    </classes>
-  </test>
-
-	<test name="VerifyCreateRecipe">
-    <classes>
-     <class name="com.testcases.VerifyCreateRecipeFromBuyer"/>
-    </classes>
-  </test>  
+  
 </suite>

@@ -1,5 +1,4 @@
 	package com.testcases;
-	
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.support.PageFactory;
 	import org.testng.annotations.AfterClass;
@@ -12,6 +11,7 @@
 
 	@Test
 	public void loginScenarios() throws Exception {
+		
 		driver = BrowserFactory.startBrowser("chrome", "https://brewbroker-react.herokuapp.com");
 		
 		CreateLoginscenarios log = PageFactory.initElements(driver, CreateLoginscenarios.class);
@@ -24,18 +24,16 @@
 		
 		Thread.sleep(1000); log.invalidEmail();	
 		
-		// log.incorrectcredentials();
+		//log.incorrectcredentials();
 		
 		Thread.sleep(1000); log.correctcredentials(); 
-		System.out.println("--------------------------------------------------------------------------");
-		System.out.println("Login scenarios script executed");
-		System.out.println("--------------------------------------------------------------------------");
 			
 	}
 	
 	@AfterClass
 	public void tearDown() throws Exception {
-	Thread.sleep(2000);
-	driver.quit();
+		Thread.sleep(2000);
+		driver.close();
 	}
 	}
+

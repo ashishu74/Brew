@@ -1,15 +1,14 @@
-package com.pages;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-
-public class CreateLoginscenarios {
+	package com.pages;	
+	import org.openqa.selenium.By;
+	import org.openqa.selenium.WebDriver;
+	import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.support.FindBy;
+	import org.openqa.selenium.support.How;
+	import org.openqa.selenium.support.ui.ExpectedConditions;
+	import org.openqa.selenium.support.ui.WebDriverWait;
+	import org.testng.Assert;
+	
+	public class CreateLoginscenarios {
 
 	WebDriver driver;
 	WebDriverWait wait;
@@ -32,7 +31,7 @@ public class CreateLoginscenarios {
 	@FindBy(how=How.CSS,using="body > div:nth-child(13) > div > div > svg")
 	WebElement close;
 	
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[1]/button")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/div/div/div/div/div[2]/button")
 	WebElement signin;
 	
 	@FindBy(how=How.XPATH,using="/html/body/div[3]/div/div/div/div/form/div[1]/span")
@@ -46,7 +45,7 @@ public class CreateLoginscenarios {
 	
 	
 	public void noEmailPassword() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[1]/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/div/div/div/div/div[2]/button")));
 		signin.click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div/form/div[3]/input")));
 		login.click();
@@ -56,7 +55,7 @@ public class CreateLoginscenarios {
 	}
 	
 	public void onlyEmail() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[1]/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/div/div/div/div/div[2]/button")));
 		signin.click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div/form/div[1]/input")));
 		email.sendKeys("ashishkumar@ucreate.co.in");
@@ -68,7 +67,7 @@ public class CreateLoginscenarios {
 	}
 	
 	public void onlypassword() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[1]/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/div/div/div/div/div[2]/button")));
 		signin.click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div/form/div[2]/input")));
 		password.sendKeys("@Test12");
@@ -79,7 +78,7 @@ public class CreateLoginscenarios {
 	}
 	 
 	public void invalidEmail() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[1]/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/div/div/div/div/div[2]/button")));
 		signin.click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div/form/div[1]/input")));
 		email.sendKeys("ashishbuyeruser@");
@@ -91,7 +90,7 @@ public class CreateLoginscenarios {
 	}
 	
 	public void incorrectcredentials() throws Exception {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[1]/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/div/div/div/div/div[2]/button")));
 		signin.click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div/form/div[1]/input")));
 		email.sendKeys("ashishbuy@yopmail.com");
@@ -104,7 +103,7 @@ public class CreateLoginscenarios {
 	}
 	
 	public void correctcredentials() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[1]/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/div/div/div/div/div[2]/button")));
 		signin.click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div/form/div[1]/input")));
 		email.sendKeys("ashishbuyer01@yopmail.com");
@@ -142,3 +141,4 @@ public class CreateLoginscenarios {
 		Assert.assertEquals(expectederror, actualerror); Thread.sleep(1000);		
 	}   
 }
+
