@@ -21,21 +21,21 @@
         wait = new WebDriverWait(driver,30);
     }
 	//--------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[1]/div/a")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[1]/div/a")
 	@CacheLookup
 	WebElement supplierprofile;
 	public void SupplierProfile() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[1]/div/a")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[1]/div/a")));
 		Assert.assertTrue(supplierprofile.isDisplayed());
 		supplierprofile.click();
 	}
 	//--------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div[2]/div/div[2]/div[2]/div[3]/button")
+	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[2]/div[2]/div[3]/button")
 	@CacheLookup
 	WebElement summaryeditbutton;
 	
 	public void SummaryEdit() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[2]/div[2]/div[3]/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[2]/div[2]/div[3]/button")));
 		Assert.assertTrue(summaryeditbutton.isDisplayed());
 		summaryeditbutton.click();
 	}
@@ -65,12 +65,12 @@
 	}
 	
 	//--------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div[2]/div/div[4]/div[1]/div[1]/div/button")
+	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[4]/div[1]/div[1]/div/button")
 	@CacheLookup
 	WebElement editstandard;
 	
 	public void EditStandard() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[4]/div[1]/div[1]/div/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[4]/div[1]/div[1]/div/button")));
 		Assert.assertTrue(editstandard.isDisplayed());
 		editstandard.click();
 	}
@@ -126,10 +126,10 @@
 		savestandquali.click(); Thread.sleep(1000); 
 	}
 	//-----------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div[2]/div/div[4]/div[2]/div[1]/div/button")
+	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[4]/div[2]/div[1]/div/button")
 	@CacheLookup
 	WebElement editawards;
-	@FindBy(how=How.XPATH, using="/html/body/div[3]/div/div/div/div[1]/div/div/div[1]/a")
+	@FindBy(how=How.XPATH, using="/html/body/div[3]/div/div/div/div[1]/div/div/div/a")
 	@CacheLookup
 	WebElement delete;
 	@FindBy(how=How.XPATH, using="/html/body/div[3]/div/div/div/div[1]/div/div/button")
@@ -140,11 +140,12 @@
 	WebElement writeawardname; 
 	
 	public void EditAwards() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[4]/div[2]/div[1]/div/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[4]/div[2]/div[1]/div/button")));
+		Assert.assertTrue(editawards.isDisplayed());
 		editawards.click();
 	}
 		public void deleteAward() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div[1]/div/div/div[1]/a")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div[1]/div/div/div/a")));
 		delete.click();
 	}
 	public void addAward() {
@@ -159,11 +160,12 @@
 	WebElement saveawards; 
 	public void SaveAward() throws Exception {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div[2]/button[1]")));
+		Assert.assertTrue(saveawards.isDisplayed());
 		saveawards.click(); Thread.sleep(1000);
 	}
 	
 	//----------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div[2]/div/div[5]/div[1]/div/div[1]/div/button")
+	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[5]/div[1]/div/div[1]/div/button")
 	@CacheLookup
 	WebElement editServices; 
 	@FindBy(how=How.XPATH, using="//*[@id=\"service_list0\"]")
@@ -178,7 +180,8 @@
 	WebElement saveService; 
 	
 	public void EditServices() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[5]/div[1]/div/div[1]/div/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[5]/div[1]/div/div[1]/div/button")));
+		Assert.assertTrue(editServices.isDisplayed());
 		editServices.click();
 		
 	}
@@ -194,7 +197,7 @@
 	}
 	//----------------------------------------------------------------------------------------------------------------
 	
-	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div[2]/div/div[5]/div[2]/div[1]/div/button")
+	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[5]/div[2]/div[1]/div/button")
 	@CacheLookup
 	WebElement editlogistics; 
 	@FindBy(how=How.XPATH, using="//*[@id=\"delivery\"]")
@@ -211,7 +214,7 @@
 	WebElement ambient;
 	
 	public void EditLogistics() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[5]/div[2]/div[1]/div/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[5]/div[2]/div[1]/div/button")));
 		editlogistics.click();
 	}
 	public void ChooseLogistics() {
@@ -226,11 +229,11 @@
 	}
 	//---------------------------------------------------------------------------------------------------------------------------
 	
-	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[3]/button")
+	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[3]/button")
 	@CacheLookup
 	WebElement profileedit;
 	public void ProfileEdit() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[3]/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[3]/button")));
 		profileedit.click();
 	}
 	
@@ -242,7 +245,7 @@
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"edit_companyName\"]")));
 		company.clear();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"edit_companyName\"]")));
-		company.sendKeys("TestingFour4");
+		company.sendKeys("ucreate.it");
 	}
 	
 	@FindBy(how=How.XPATH, using="/html/body/div[3]/div/div/div/div[2]/button[1]")
@@ -254,7 +257,7 @@
 	}
 	//--------------------------------------------------------------------------------------------------------------------------
 	
-	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div[2]/div/div[6]/div[1]/div[1]/div/button")
+	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[6]/div[1]/div[1]/div/button")
 	@CacheLookup
 	WebElement editcapacity;
 	
@@ -266,7 +269,7 @@
 	WebElement savecapacity;
 	
 	public void AnnualCapacityEdit() throws Exception {
-	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[6]/div[1]/div[1]/div/button")));
+	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[6]/div[1]/div[1]/div/button")));
 	editcapacity.click();
 	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div[1]/div/div/div/input")));
 	editcapacityfield.clear();
@@ -275,7 +278,7 @@
 	savecapacity.click(); Thread.sleep(1000);
 	}
 	//-------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div[2]/div/div[6]/div[2]/div[1]/div/button")
+	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[6]/div[2]/div[1]/div/button")
 	@CacheLookup
 	WebElement editordervolume;
 	@FindBy(how=How.XPATH, using="//*[@id=\"minCapacity\"]")
@@ -289,20 +292,20 @@
 	WebElement saveordervolume;
 	
 	public void EditOrderVolume() throws Exception {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[6]/div[2]/div[1]/div/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[6]/div[2]/div[1]/div/button")));
 		editordervolume.click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"minCapacity\"]")));
 		minbrewlength.clear();
-		minbrewlength.sendKeys("100");
+		minbrewlength.sendKeys("10000");
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"maxCapacity\"]")));
 		maxbrewlength.clear();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"maxCapacity\"]")));
-		maxbrewlength.sendKeys("10000");
+		maxbrewlength.sendKeys("40000");
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div[2]/button[1]")));
 		saveordervolume.click(); Thread.sleep(1000);
 	}
 	//----------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div[2]/div/div[7]/div[1]/div[1]/div/button")
+	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[7]/div[1]/div[1]/div/button")
 	@CacheLookup
 	WebElement editstyle;
 	@FindBy(how=How.XPATH, using="//*[@id=\"style7\"]")
@@ -313,15 +316,17 @@
 	WebElement savestyle;
 	
 	public void EditStyles() throws Exception {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[7]/div[1]/div[1]/div/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[7]/div[1]/div[1]/div/button")));
 		editstyle.click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"style7\"]")));
 		style7.click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div[2]/button[1]")));
+		Actions act = new Actions(driver);
+		act.moveToElement(savestyle).build().perform();
 		savestyle.click(); Thread.sleep(1000);
 	}
 	//------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div[2]/div[2]/div/div[7]/div[2]/div[1]/div/button")
+	@FindBy(how=How.XPATH, using="//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[7]/div[2]/div[1]/div/button")
 	@CacheLookup
 	WebElement editonsite;
 	@FindBy(how=How.XPATH, using="/html/body/div[3]/div/div/div/div[1]/div/div/div/div[1]/div[2]/div[1]/label")
@@ -347,7 +352,7 @@
 	WebElement saveonsite;
 	
 	public void EditOnsitePackaging() throws Exception {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\\\"app\\\"]/div/div[2]/div[2]/div/div[7]/div[2]/div[1]/div/button")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div/div[7]/div[2]/div[1]/div/button")));
 		editonsite.click(); 
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div[1]/div/div/div/div[1]/div[2]/div[1]/label")));
 		bottleing0.click(); 
