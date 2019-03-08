@@ -22,7 +22,7 @@ public class BrowserFactory {
 			options.addArguments("headless");
 			options.addArguments("window-size=1400,800");
 		
-			driver = (WebDriver) new ChromeDriver(options);Thread.sleep(5000);
+			driver = (WebDriver) new ChromeDriver(options);
 			//driver=(WebDriver) new ChromeDriver();
 		}		
 		driver.manage().window().maximize();
