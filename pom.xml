@@ -98,8 +98,7 @@
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
-      </plugin>
-    </plugins>	 
+      </plugin> 
     	<plugin>
       		<groupId>org.apache.maven.plugins</groupId>
       		<artifactId>maven-surefire-plugin</artifactId>
