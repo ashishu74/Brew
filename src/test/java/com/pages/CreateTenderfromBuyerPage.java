@@ -1,21 +1,17 @@
-/**
- * 
- */
-package com.pages;
-
-import java.util.UUID;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-
-public class CreateTenderfromBuyerPage {
+	package com.pages;
+	
+	import java.util.UUID;
+	import org.openqa.selenium.By;
+	import org.openqa.selenium.WebDriver;
+	import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.support.CacheLookup;
+	import org.openqa.selenium.support.FindBy;
+	import org.openqa.selenium.support.How;
+	import org.openqa.selenium.support.ui.ExpectedConditions;
+	import org.openqa.selenium.support.ui.WebDriverWait;
+	import org.testng.Assert;
+	
+	public class CreateTenderfromBuyerPage {
 	WebDriver driver;
 	WebDriverWait wait;
 	
@@ -25,23 +21,23 @@ public class CreateTenderfromBuyerPage {
     }
 	
 	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div/a")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]/div/a")
 	@CacheLookup
 	WebElement newtender;
 	
 	public void newTender() {
-		wait.until(ExpectedConditions.presenceOfElementLocated((By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div/a"))));
+		wait.until(ExpectedConditions.presenceOfElementLocated((By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]/div/a"))));
 		Assert.assertTrue(newtender.isDisplayed());
 		newtender.click();
 	}
 	
 	/*===============================================Step One =====================================================*/
 	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//input[@id='title']")
+	@FindBy(how=How.XPATH,using="//*[@id=\"title\"]")
 	@CacheLookup
 	WebElement nametender; 
 	public void nameOfTender() {
-		wait.until(ExpectedConditions.presenceOfElementLocated((By.xpath("//input[@id='title']"))));
+		wait.until(ExpectedConditions.presenceOfElementLocated((By.xpath("//*[@id=\"title\"]"))));
 		Assert.assertTrue(nametender.isDisplayed());
 		String uuid = UUID.randomUUID().toString();	
 		nametender.sendKeys(uuid);
@@ -58,11 +54,11 @@ public class CreateTenderfromBuyerPage {
 	}
 	
 	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[2]/div[2]/label")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[2]/div[1]/label/span")
 	@CacheLookup
 	WebElement tellus;
 	public void tellUsMore() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[2]/div[2]/label")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[2]/div[1]/label/span")));
 		tellus.click();
 	}
 	//-------------------------------------------------------------------------------------------------------------------------
@@ -74,11 +70,11 @@ public class CreateTenderfromBuyerPage {
 		suppcomm.click();
 	}
 	//------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[4]/div/div[3]/label")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[4]/div/div[3]/label/span")
 	@CacheLookup
 	WebElement quarterly;
 	public void contractTypeQuarterly() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[4]/div/div[3]/label")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[4]/div/div[3]/label/span")));
 		quarterly.click();
 	}
 	//----------------------------------------------------------------------------------------------------------------------------------------
@@ -89,6 +85,7 @@ public class CreateTenderfromBuyerPage {
 	@FindBy(how=How.XPATH,using="//*[@id=\"date-picker\"]/div/div[2]/div/div[2]/div[2]/div[5]/div[6]")
 	@CacheLookup
 	WebElement date1;
+	
 	public void submitQuoteBy() {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.half-width:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)")));
 		Assert.assertTrue(dateto.isDisplayed());
@@ -117,12 +114,12 @@ public class CreateTenderfromBuyerPage {
 	}
 	
 	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[6]/div/input[2]")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[6]/div/button")
 	@CacheLookup
 	WebElement next;
 	
 	public void nextForm() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[6]/div/input[2]")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[6]/div/button")));
 		Assert.assertTrue(next.isDisplayed());
 		next.click();
 	}
@@ -193,10 +190,6 @@ public class CreateTenderfromBuyerPage {
 	@CacheLookup
 	WebElement unfiltered;
 	
-	@FindBy(how=How.XPATH,using="//*[@id=\"finish-0-2\"]")
-	@CacheLookup
-	WebElement finned;
-	
 	@FindBy(how=How.XPATH,using="//*[@id=\"finish-0-3\"]")
 	@CacheLookup
 	WebElement unpasterised;
@@ -204,110 +197,17 @@ public class CreateTenderfromBuyerPage {
 	public void finish() {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"finish-0-1\"]")));
 		unfiltered.click();
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"finish-0-2\"]")));
-		finned.click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"finish-0-3\"]")));
 		unpasterised.click();
 	}
-	//--------------------------------------------------------------------------------------------------------------------------------
 	
-	@FindBy(how=How.XPATH,using="//input[@id='Brewingservices1']")
-	@CacheLookup
-	WebElement contractBrewing;
-	public void brewingServices() throws Exception {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='Brewingservices1']")));
-		contractBrewing.click();
-		Assert.assertTrue(contractBrewing.isEnabled()); Thread.sleep(4000);
-	}
-	
-	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div[1]/div[2]/div/div[3]/div/div[1]/label/span")
-	@CacheLookup
-	WebElement ales;
-	public void style_Ales() throws Exception {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div[2]/div/div[3]/div/div[1]/label/span")));
-		Assert.assertTrue(ales.isDisplayed()); Thread.sleep(4000);
-		ales.click();	
-	}
-	
-	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"1\"]")
-	@CacheLookup
-	WebElement alesABP; 
-	public void ales_ABP() throws Exception {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"1\"]")));
-		Assert.assertTrue(alesABP.isDisplayed()); Thread.sleep(4000);
-		alesABP.sendKeys("40");
-	}
-	
-	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div[1]/div[2]/div/div[3]/div/div[1]/div/div/label/span")
-	@CacheLookup
-	WebElement alesicanprovide;
-	public void ales_icanprovide() throws Exception {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div[2]/div/div[3]/div/div[1]/div/div/label/span")));
-		Assert.assertTrue(alesicanprovide.isDisplayed()); Thread.sleep(4000);
-		alesicanprovide.click();
-	}
-	
-	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div[1]/div[2]/div/div[3]/div/div[2]/label/span")
-	@CacheLookup
-	WebElement lager;
-	public void style_lager() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div[2]/div/div[3]/div/div[2]/label/span")));
-		Assert.assertTrue(lager.isDisplayed());
-		lager.click();	
-	}
-	
-	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"2\"]")
-	@CacheLookup
-	WebElement lagerABP; 
-	public void lager_ABP() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"2\"]")));
-		Assert.assertTrue(lagerABP.isDisplayed());
-		lagerABP.sendKeys("40");
-	}
-	
-	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div[1]/div[2]/div/div[3]/div/div[2]/div/div/label/span")
-	@CacheLookup
-	WebElement lagericanprovide; 
-	public void lager_icanprovide() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div[2]/div/div[3]/div/div[2]/div/div/label/span")));
-		Assert.assertTrue(lagericanprovide.isDisplayed());
-		lagericanprovide.click();
-	}
-	
-	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div[1]/div[2]/div/div[4]/input[2]")
-	@CacheLookup
-	WebElement formtwocontinue; 
-	public void next_Form_two() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div[2]/div/div[4]/input[2]")));
-		Assert.assertTrue(formtwocontinue.isDisplayed());
-		formtwocontinue.click();
-	}
-	
-	/*=================================================================Step Three ==================================================================*/
-	@FindBy(how=How.XPATH,using="//input[@id='contract1']")
-	@CacheLookup
-	WebElement oneoff;
-	public void contract_type() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='contract1']")));
-		oneoff.click();
-		Assert.assertTrue(oneoff.isEnabled());
-	}
-	
-	//--------------------------------------Entering Ales--------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"tender_volume\"]/form/div[1]/div/div[2]/div[8]/section/div[1]/div/div[1]/div/div/input")
+	@FindBy(how=How.XPATH,using="//*[@id=\"tender_volume\"]/form/div[1]/div/div[2]/div[9]/section/div[1]/div/div[1]/div/div/input")
 	@CacheLookup
 	WebElement volume;
 	public void volume_ales() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"tender_volume\"]/form/div[1]/div/div[2]/div[8]/section/div[1]/div/div[1]/div/div/input")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"tender_volume\"]/form/div[1]/div/div[2]/div[9]/section/div[1]/div/div[1]/div/div/input")));
 		 Assert.assertTrue(volume.isDisplayed());
-		 volume.sendKeys("2500");
+		 volume.sendKeys("15000");
 	 }
 	
 	//----------------------------------------------------------------------------------------------------------------------------------------
@@ -433,42 +333,42 @@ public class CreateTenderfromBuyerPage {
 		necklabel.click();
 	}
 	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"tender_volume\"]/form/div[2]/input[2]")
+	@FindBy(how=How.XPATH,using="//*[@id=\"tender_volume\"]/form/div[2]/button")
 	@CacheLookup
 	WebElement continuethreestep; 
 	public void continue_step_three() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"tender_volume\"]/form/div[2]/input[2]")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"tender_volume\"]/form/div[2]/button")));
 		Assert.assertTrue(continuethreestep.isDisplayed());
 		continuethreestep.click();
 		
 	}
 	
 	/*=================================Step Four=========================================================================*/
-	@FindBy(how=How.XPATH,using="/html/body/div[2]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div/label/span")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div")
 	@CacheLookup
 	WebElement duty; 
 	public void duty() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[2]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div/label/span")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div")));
 		Assert.assertTrue(duty.isDisplayed());
 		duty.click();
 	}
 	
 	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[3]/input[2]")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/div[3]/button")
 	@CacheLookup
 	WebElement continuefourstep; 
 	public void duty_continue() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[3]/input[2]")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/div[3]/button")));
 		Assert.assertTrue(continuefourstep.isEnabled());
 		continuefourstep.click();
 	}
 	
 	/*=================================Step Five=========================================================================*/
-	@FindBy(how=How.CSS,using="#app > div > div.route-wrap > div > div.createTenderWrap > div.stepsWrap > div.whiteBox > div > div.servicesWrap > div:nth-child(1) > div > label > span")
+	@FindBy(how=How.CSS,using="#app > div > div > div.route-wrap > div > div.createTenderWrap > div.stepsWrap > div.whiteBox > div > div.servicesWrap > div:nth-child(1) > div > label > span")
 	@CacheLookup
 	WebElement arrangecollection;
 	public void arrange_collection() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#app > div > div.route-wrap > div > div.createTenderWrap > div.stepsWrap > div.whiteBox > div > div.servicesWrap > div:nth-child(1) > div > label > span")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#app > div > div > div.route-wrap > div > div.createTenderWrap > div.stepsWrap > div.whiteBox > div > div.servicesWrap > div:nth-child(1) > div > label > span")));
 		Assert.assertTrue(arrangecollection.isDisplayed());
 		arrangecollection.click();
 	}
@@ -484,32 +384,32 @@ public class CreateTenderfromBuyerPage {
 	}
 	
 	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[1]/div/label")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[1]/div/label/span")
 	@CacheLookup
 	WebElement ambient;
 	public void ambient_click() {	
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[1]/div/label")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[1]/div/label/span")));
 		Assert.assertTrue(ambient.isDisplayed());
 		ambient.click();
 	}
 	
 	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[3]/input")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[3]/input")
 	@CacheLookup
 	WebElement duration; 
 	public void duration_click() {	
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[3]/input")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[3]/input")));
 		Assert.assertTrue(duration.isDisplayed());
 		duration.click();
 		duration.sendKeys("10 days");
 	}
 	
 	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[3]/input[2]")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/div[3]/button")
 	@CacheLookup
 	WebElement continuefivestep; 
 	public void stepfive_sontinue() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[3]/input[2]")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/div[3]/button")));
 		Assert.assertTrue(continuefivestep.isDisplayed());
 		continuefivestep.click();
 	}
@@ -557,74 +457,33 @@ public class CreateTenderfromBuyerPage {
 	}
 	
 	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[4]/input[2]")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/div[4]/button")
 	@CacheLookup
 	WebElement continuesixstep;
 	public void stepsix_continue() { 
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[4]/input[2]")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/div[4]/button")));
 		Assert.assertTrue(continuesixstep.isDisplayed());
 		continuesixstep.click();
 	}
 	
-	/*=================================Step Seven=========================================================================*/
-	@FindBy(how=How.CSS,using="#app > div > div.route-wrap > div > div.createTenderWrap.confirmSuppliersWrap > div > div.whiteBox.summary-whiteBox > div > div.selectSupplierCountPanel > div.btn-group > input")
+	@FindBy(how=How.CSS,using="#app > div > div > div.route-wrap > div > div.createTenderWrap.confirmSuppliersWrap > div > div.whiteBox.summary-whiteBox > div > div.selectSupplierCountPanel > div.btn-group > button")
 	@CacheLookup
 	WebElement continuesevenstep;
 	public void continue_step_seven() {	
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#app > div > div.route-wrap > div > div.createTenderWrap.confirmSuppliersWrap > div > div.whiteBox.summary-whiteBox > div > div.selectSupplierCountPanel > div.btn-group > input")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#app > div > div > div.route-wrap > div > div.createTenderWrap.confirmSuppliersWrap > div > div.whiteBox.summary-whiteBox > div > div.selectSupplierCountPanel > div.btn-group > button")));
 		Assert.assertTrue(continuesevenstep.isDisplayed());
 		continuesevenstep.click();
 	}
 	
-	/*=================================Step Eight=========================================================================*/
-	@FindBy(how=How.CLASS_NAME,using="suuplierstext")
-	WebElement text;
-	public void clicktext() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.className("suuplierstext")));
-		Assert.assertTrue(text.isDisplayed());
-		text.click();
-	}
-	
-	
-	@FindBy(how=How.NAME,using="supplier")
-	WebElement MoorhouseBrewery;
-	public void selectMoorhouseBrewery() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.name("supplier")));
-		MoorhouseBrewery.click();
-	}
-	
-	//----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.ID,using="46")
-	WebElement Bhopstuff;
-	public void selectBhopstuff() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("46")));
-		Bhopstuff.click();
-	}
 	
 	//-----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"selectAll\"]")
-	WebElement selectall;
-	public void Select_all() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"selectAll\"]")));
-		Assert.assertTrue(selectall.isEnabled());
-		selectall.click();
-	}
-	
-	//-----------------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"breweryStepSeven\"]/div[2]/div[2]/input")
+	@FindBy(how=How.XPATH,using="//*[@id=\"breweryStepSeven\"]/div[2]/div[2]/button")
 	WebElement submit;
 	public void submitTender() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"breweryStepSeven\"]/div[2]/div[2]/input")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"breweryStepSeven\"]/div[2]/div[2]/button")));
 		Assert.assertTrue(submit.isDisplayed());
 		submit.click();
-	}	
-	
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div/input")
-	WebElement viewdashboard;
-	public void viewDashboard() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div/input")));
-		Assert.assertTrue(viewdashboard.isDisplayed());
-		viewdashboard.click();
-	}	
+	}		
 		
 }
+
