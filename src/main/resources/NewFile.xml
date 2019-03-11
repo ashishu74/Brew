@@ -21,7 +21,7 @@
 
   <test name="VerifyCreateQuoteFromSupplier">
     <classes>
-     <class name="com.testcases.VerifyCreateQuoteFromSupplier.java"/>
+     <class name="com.testcases.VerifyCreateQuoteFromSupplier"/>
     </classes>
   </test>
   
