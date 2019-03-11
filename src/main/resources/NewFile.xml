@@ -18,5 +18,11 @@
      <class name="com.testcases.VerifyCreateTenderfromBuyer"/>
     </classes>
   </test>
+
+  <test name="VerifyCreateQuoteFromSupplier">
+    <classes>
+     <class name="com.testcases.VerifyCreateQuoteFromSupplier.java"/>
+    </classes>
+  </test>
   
 </suite>
