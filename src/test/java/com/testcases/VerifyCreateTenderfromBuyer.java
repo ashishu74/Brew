@@ -12,14 +12,12 @@
 	import com.pages.CreateTenderfromBuyerPage;	
 	import utility.BrowserFactory;
 	
-	public class VerifyCreateTenderfromBuyer 
-	{
+	public class VerifyCreateTenderfromBuyer {
 	
 	WebDriver driver;
 	
 	@Test(priority=2)
-	public void createTenderbyBuyer() throws Exception
-	{
+	public void createTenderbyBuyer() throws Exception {
 		driver=BrowserFactory.startBrowser("chrome","http://brewbroker-react.herokuapp.com");
 		Reporter.log("Browser launched");
 		
@@ -116,3 +114,4 @@
 	} 
 	
 }
+
