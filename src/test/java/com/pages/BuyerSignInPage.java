@@ -1,18 +1,13 @@
-/**
- * 
- */
-package com.pages;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-
-public class BuyerSignInPage {
+package com.pages;	
+	import org.openqa.selenium.By;
+	import org.openqa.selenium.WebDriver;
+	import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.support.FindBy;
+	import org.openqa.selenium.support.How;
+	import org.openqa.selenium.support.ui.ExpectedConditions;
+	import org.openqa.selenium.support.ui.WebDriverWait;
+	
+	public class BuyerSignInPage {
 	
 	WebDriver driver;
 	WebDriverWait wait;
@@ -23,11 +18,11 @@ public class BuyerSignInPage {
 	}
 	
 	//---------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[1]/button")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/div/div/div/div/div[2]/button")
 	WebElement clicklogin;
 	
 	public void clickonLoginhomepage() { 
-		wait.until(ExpectedConditions.presenceOfElementLocated((By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[1]/button"))));
+		wait.until(ExpectedConditions.presenceOfElementLocated((By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/div/div/div/div/div[2]/button"))));
 		clicklogin.click();
 	}
 	//---------------------------------------------------------------------------------------------------------------------------
@@ -56,3 +51,4 @@ public class BuyerSignInPage {
 	}
 	//---------------------------------------------------------------------------------------------------------------------------
 }
+
