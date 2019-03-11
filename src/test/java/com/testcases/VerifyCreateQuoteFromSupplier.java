@@ -1,15 +1,11 @@
 	package com.testcases;
 	
 	import org.openqa.selenium.By;
-//import org.openqa.selenium.By;
 	import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-//import org.openqa.selenium.support.ui.ExpectedConditions;
-	//import org.openqa.selenium.support.ui.WebDriverWait;
+	import org.openqa.selenium.support.ui.ExpectedConditions;
+	import org.openqa.selenium.support.ui.WebDriverWait;
 	import org.testng.Reporter;
 	import org.testng.annotations.AfterClass;
 	import org.testng.annotations.Test;
@@ -17,8 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 	import com.pages.CreateQuoteSupplierPage;
 	import utility.BrowserFactory;
 	
-	public class VerifyCreateQuoteFromSupplier {
-		
+	public class VerifyCreateQuoteFromSupplier {		
 	WebDriver driver;
 	
 	@Test(priority=1)
@@ -29,7 +24,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 	
 	signin.clickonLoginhomepage();	
 	
-	signin.enterEmail("ashishsupplier01@yopmail.com");
+	signin.enterEmail("vineeshbehl@yopmail.com");
 	signin.enterPassword("@Test1234");
 	signin.clickLoginButton();		
 	
@@ -39,9 +34,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 	
 	Reporter.log("Supplier member moved to dashboard page");
-	quote.receivedTender();
-	quote.TenderToreview();
-	quote.toreview_tender(); 
+	quote.TenderToreview(); 
 	quote.createquote_allrequirement(); 
 	
 	quote.Price_unit();  
@@ -76,8 +69,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 	
 	@AfterClass
 	public void teardown() throws Exception {
-		driver.close();
+		//driver.close();
 	} 
 	
 }
+
 
