@@ -55,7 +55,7 @@
 	@Test (priority=2)
 	public void scriptPassedorFailedCreateQuote() {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id="app"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div[1]")));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div[1]")));
 		boolean status = element.isDisplayed();
 		if (status) {
 			System.out.println("===== create Quote script passed ======");
@@ -69,7 +69,7 @@
 	
 	@AfterClass
 	public void teardown() throws Exception {
-		//driver.close();
+		driver.close();
 	} 
 	
 }
