@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
 <suite name="Workflow UBREW" parallel="none">
+
+  <test name="VerifyHomepageUI">
+    <classes>
+     <class name="uitesting.HomePageUI"/>
+    </classes>
+   </test>
+
+  <test name="VerifyPricingUI">
+    <classes>
+     <class name="uitesting.PricingUI"/>
+    </classes>
+   </test>
 	
   <test name="VerifyLoginScenarios">
     <classes>
