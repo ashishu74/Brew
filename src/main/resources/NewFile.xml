@@ -31,5 +31,17 @@
      <class name="com.testcases.VerifyCreateQuoteFromSupplier"/>
     </classes>
   </test>
+
+  <test name="VerifyMessagingBuyer">
+    <classes>
+     <class name="com.testcases.VerifyMessagingBuyer"/>
+    </classes>
+  </test>
+
+  <test name="VerifyMessagingSupplier">
+    <classes>
+     <class name="com.testcases.VerifyMessagingSupplier"/>
+    </classes>
+  </test>
   
 </suite>
