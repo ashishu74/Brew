@@ -19,12 +19,6 @@
      <class name="com.testcases.VerifyLoginScenarios"/>
     </classes>
   </test>
-
-  <test name="VerifyEditSupplierProfile">
-    <classes>
-     <class name="com.testcases.VerifyEditSupplierProfile"/>
-    </classes>
-  </test>
    
   <test name="VerifyCreateTender">
     <classes>
