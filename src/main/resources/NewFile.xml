@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
 <suite name="Workflow UBREW" parallel="none">
-
-  <test name="VerifyHomepageUI">
+  
+  <listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" /> 
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	 
+   <test name="VerifyHomepageUI">
     <classes>
      <class name="uitesting.HomePageUI"/>
     </classes>
@@ -14,25 +19,49 @@
     </classes>
    </test>
 	
-  <test name="VerifyLoginScenarios">
+   <test name="VerifyLoginScenarios">
     <classes>
      <class name="com.testcases.VerifyLoginScenarios"/>
     </classes>
-  </test>
+   </test>
+
+   <test name="VerifyEditSupplierProfile">
+    <classes>
+     <class name="com.testcases.VerifyEditSupplierProfile"/>
+    </classes>
+   </test>
    
-  <test name="VerifyCreateTender">
+   <test name="VerifyCreateTender">
     <classes>
      <class name="com.testcases.VerifyCreateTenderfromBuyer"/>
     </classes>
-  </test>
-
-  <test name="VerifyCreateQuoteFromSupplier">
+   </test>
+   
+   <test name="VerifyCreateQuote">
     <classes>
      <class name="com.testcases.VerifyCreateQuoteFromSupplier"/>
     </classes>
-  </test>
-
-  <test name="VerifyMessagingBuyer">
+   </test>
+   
+   <test name="VerifyCreateRecipe">
+    <classes>
+     <class name="com.testcases.VerifyCreateRecipeFromBuyer"/>
+    </classes>
+   </test>
+   
+   <test name="VerifyRecipeTotalCostFromSupplier">
+    <classes>
+     <class name="com.testcases.VerifyRecipeTotalCostFromSupplier"/>
+    </classes>
+   </test>
+   
+    <test name="VerifyFinalizeQuoteBuyer">
+    <classes>
+     <class name="com.testcases.VerifyFinalizeQuoteBuyer"/>
+    </classes>
+   </test>
+   
+   <test name="VerifyMessagingBuyer">
     <classes>
      <class name="com.testcases.VerifyMessagingBuyer"/>
     </classes>
@@ -43,5 +72,5 @@
      <class name="com.testcases.VerifyMessagingSupplier"/>
     </classes>
   </test>
-  
-</suite>
+   
+   </suite>

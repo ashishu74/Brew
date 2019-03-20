@@ -23,7 +23,7 @@ public class CreateMessagingBuyer {
 	@CacheLookup
 	WebElement tender;
 	
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div/div/div[2]/table/tbody/tr/td[1]/span[2]")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div/div/div[1]/table/tbody/tr/td[2]")
 	@CacheLookup
 	WebElement quote;
 	
@@ -38,7 +38,7 @@ public class CreateMessagingBuyer {
 	public void messagingBuyer() {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[2]/div/table/tbody/tr[1]/td[1]")));
 		tender.click();
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div/div/div[2]/table/tbody/tr/td[1]/span[2]")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div/div/div[1]/table/tbody/tr/td[2]")));
 		quote.click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[3]/div/article")));
 		messaging.click();

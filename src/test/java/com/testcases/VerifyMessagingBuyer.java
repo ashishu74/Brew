@@ -34,7 +34,8 @@
 		
 	}	
 		@AfterClass
-		public void tearDown() {
+		public void tearDown() throws Exception {
+			Thread.sleep(2000);
 			driver.close();
 		}
 	}

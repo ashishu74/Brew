@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         wait = new WebDriverWait(driver,30);
     }
 
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div[1]/div[1]/table/tbody/tr[1]/td[1]/p[1]")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div[1]/div[1]/div/table/tbody/tr[1]/td[1]")
 	@CacheLookup
 	WebElement tender;   
 	
@@ -30,7 +30,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 	WebElement send; 
 	
 	public void messagingSupplier() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div[1]/div[1]/table/tbody/tr[1]/td[1]/p[1]")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div[1]/div[1]/div/table/tbody/tr[1]/td[1]")));
 		tender.click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[3]/div/article")));
 		messagefield.click();

@@ -70,12 +70,12 @@
 		suppcomm.click();
 	}
 	//------------------------------------------------------------------------------------------------------------------------------
-	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[4]/div/div[3]/label/span")
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[4]/div/div[4]/label/span")
 	@CacheLookup
-	WebElement quarterly;
-	public void contractTypeQuarterly() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[4]/div/div[3]/label/span")));
-		quarterly.click();
+	WebElement oneoff;
+	public void contractTypeOneOff() {
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div[1]/div[2]/div/form/div[4]/div/div[4]/label/span")));
+		oneoff.click();
 	}
 	//----------------------------------------------------------------------------------------------------------------------------------------
 	@FindBy(how=How.CSS,using="div.half-width:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)")
@@ -486,4 +486,3 @@
 	}		
 		
 }
-

@@ -39,7 +39,7 @@
 		tender.descriptionTender(); 
 		tender.tellUsMore();
 		tender.supplierCommunication(); 
-		tender.contractTypeQuarterly(); 
+		tender.contractTypeOneOff(); 
 		tender.submitQuoteBy();
 		tender.deliverContractBy();
 		Reporter.log("Step one tender details are filled");
@@ -114,4 +114,3 @@
 	} 
 	
 }
-
