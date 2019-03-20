@@ -24,12 +24,6 @@
      <class name="com.testcases.VerifyLoginScenarios"/>
     </classes>
    </test>
-
-   <test name="VerifyEditSupplierProfile">
-    <classes>
-     <class name="com.testcases.VerifyEditSupplierProfile"/>
-    </classes>
-   </test>
    
    <test name="VerifyCreateTender">
     <classes>
@@ -42,35 +36,6 @@
      <class name="com.testcases.VerifyCreateQuoteFromSupplier"/>
     </classes>
    </test>
-   
-   <test name="VerifyCreateRecipe">
-    <classes>
-     <class name="com.testcases.VerifyCreateRecipeFromBuyer"/>
-    </classes>
-   </test>
-   
-   <test name="VerifyRecipeTotalCostFromSupplier">
-    <classes>
-     <class name="com.testcases.VerifyRecipeTotalCostFromSupplier"/>
-    </classes>
-   </test>
-   
-    <test name="VerifyFinalizeQuoteBuyer">
-    <classes>
-     <class name="com.testcases.VerifyFinalizeQuoteBuyer"/>
-    </classes>
-   </test>
-   
-   <test name="VerifyMessagingBuyer">
-    <classes>
-     <class name="com.testcases.VerifyMessagingBuyer"/>
-    </classes>
-  </test>
-
-  <test name="VerifyMessagingSupplier">
-    <classes>
-     <class name="com.testcases.VerifyMessagingSupplier"/>
-    </classes>
-  </test>
+  
    
    </suite>
