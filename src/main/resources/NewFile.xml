@@ -1,36 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
-<suite name="Workflow UBREW" parallel="none">
-  
-  <listeners>
-		<listener class-name="org.uncommons.reportng.HTMLReporter" /> 
-		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Workflow BrewBroker" parallel="none">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
 
-	 
-   <test name="VerifyHomepageUI">
-    <classes>
-     <class name="UITesting.HomePageUI"/>
-    </classes>
-   </test>
+	<test name="VerifyHomepageUI">
+		<classes>
+			<class name="uitesting.HomePageUI" />
+		</classes>
+	</test>
 
-  <test name="VerifyPricingUI">
-    <classes>
-     <class name="UITesting.PricingUI"/>
-    </classes>
-   </test>
-	
-   <test name="VerifyLoginScenarios">
-    <classes>
-     <class name="com.TestCases.VerifyLoginScenarios"/>
-    </classes>
-   </test>
+	<test name="VerifyPricingUI">
+		<classes>
+			<class name="uitesting.PricingUI" />
+		</classes>
+	</test>
 
-   <test name="VerifyEditSupplierProfile">
-    <classes>
-     <class name="com.TestCases.VerifyEditSupplierProfile"/>
-    </classes>
-   </test>
+	<test name="VerifyLoginScenarios">
+		<classes>
+			<class name="com.testcases.VerifyLoginScenarios" />
+		</classes>
+	</test>
 
+	<test name="VerifyEditSupplierProfile">
+		<classes>
+			<class name="com.testcases.VerifyEditSupplierProfile" />
+		</classes>
+	</test>
 
-   </suite>
+	<test name="VerifyCreateTender">
+		<classes>
+			<class name="com.testcases.VerifyCreateTenderfromBuyerStepOne" />
+		</classes>
+	</test>
+
+	<test name="VerifyCreateQuote">
+		<classes>
+			<class name="com.testcases.VerifyCreateQuoteFromSupplierStepTwo" />
+		</classes>
+	</test>
+
+	<test name="VerifyCreateRecipe">
+		<classes>
+			<class name="com.testcases.VerifyCreateRecipeFromBuyerStepThree" />
+		</classes>
+	</test>
+
+	<test name="VerifyRecipeTotalCostFromSupplier">
+		<classes>
+			<class name="com.testcases.VerifyRecipeTotalCostFromSupplierStepFour" />
+		</classes>
+	</test>
+
+	<test name="VerifyFinalizeQuoteBuyer">
+		<classes>
+			<class name="com.testcases.VerifyFinalizeQuoteBuyerStepFive" />
+		</classes>
+	</test>
+
+	<test name="VerifyMessagingBuyer">
+		<classes>
+			<class name="com.testcases.VerifyMessagingBuyer" />
+		</classes>
+	</test>
+
+	<test name="VerifyMessagingSupplier">
+		<classes>
+			<class name="com.testcases.VerifyMessagingSupplier" />
+		</classes>
+	</test>
+
+</suite>

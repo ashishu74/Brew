@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class PricingUI {
+
 WebDriver driver;
 public By pricing = By.xpath("//a[contains(@href,'/pricing')]");
 public By chooseaplan = By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/h3");
