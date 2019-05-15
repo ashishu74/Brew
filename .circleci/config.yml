@@ -33,6 +33,5 @@ jobs:
             sudo rm chromedriver_linux64.zip
             sudo mv chromedriver /usr/bin/
             sudo chmod 777 /usr/bin/chromedriver
-
       # run tests!
       - run: mvn test
