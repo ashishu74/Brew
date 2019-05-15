@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class CreateMessagingBuyer {
 	WebDriver driver;
 	WebDriverWait wait;
+<<<<<<< HEAD
 
 	public CreateMessagingBuyer(WebDriver driver) {
 		this.driver = driver;
@@ -47,6 +48,40 @@ public class CreateMessagingBuyer {
 		messaging.sendKeys("Test message for testing messaging functionality.");
 		wait.until(ExpectedConditions.presenceOfElementLocated(By
 				.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[3]/button")));
+=======
+	
+	public CreateMessagingBuyer(WebDriver driver){
+        this.driver = driver; 
+        wait = new WebDriverWait(driver,30);
+    }
+
+
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[2]/div/table/tbody/tr[1]/td[1]")
+	@CacheLookup
+	WebElement tender;
+	
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div/div/div[1]/table/tbody/tr/td[2]")
+	@CacheLookup
+	WebElement quote;
+	
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[3]/div/article")
+	@CacheLookup
+	WebElement messaging; 
+	
+	@FindBy(how=How.XPATH,using="//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[3]/button")
+	@CacheLookup
+	WebElement send;
+	
+	public void messagingBuyer() {
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[2]/div/table/tbody/tr[1]/td[1]")));
+		tender.click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div/div/div[1]/table/tbody/tr/td[2]")));
+		quote.click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[3]/div/article")));
+		messaging.click();
+		messaging.sendKeys("Test message for testing messaging functionality.");
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[3]/button")));
+>>>>>>> a67b8f5397566c18f219b324a8e7421038d20ce1
 		send.click();
 	}
 }
