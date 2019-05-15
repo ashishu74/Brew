@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package uitesting;
 
 import org.openqa.selenium.By;
@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class PricingUI {
 	WebDriver driver;
 
-=======
+
 	package uitesting;
 	
 	import org.openqa.selenium.By;
@@ -26,27 +26,27 @@ public class PricingUI {
 	public class PricingUI {
 	WebDriver driver;
 	
->>>>>>> a67b8f5397566c18f219b324a8e7421038d20ce1
+
 	public By chooseaplan = By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/h1");
 	public By freemiumplan = By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[3]/div/div[1]/div[1]/h2");
 	public By signuptoday = By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[3]/div/div[1]/div[1]/h3");
 	public By basictraderprofile = By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[3]/div/div[1]/div[2]/ul/li[1]");
-<<<<<<< HEAD
+
 
 	@BeforeClass
 	public void launchBrowser() throws Exception {
 		System.setProperty("webdriver.chrome.driver", "/home/ucreate-66/eclipse-workspace/brew/Drivers/chromedriver");
-=======
+
 	
 	@BeforeClass
 	public void launchBrowser() throws Exception {
 		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
->>>>>>> a67b8f5397566c18f219b324a8e7421038d20ce1
+
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("window-size=1400,800");
 		options.addArguments("headless");
 		driver = new ChromeDriver(options);
-<<<<<<< HEAD
+
 		driver.manage().window().maximize();
 		driver.get("https://brewbroker-react.herokuapp.com/pricing");
 	}
@@ -138,7 +138,7 @@ public class PricingUI {
 	}
 
 }
-=======
+
 		driver.manage().window().maximize(); 
 		driver.get("https://brewbroker-react.herokuapp.com/pricing");
 	} 
@@ -224,4 +224,4 @@ public class PricingUI {
 	}
 
 	}
->>>>>>> a67b8f5397566c18f219b324a8e7421038d20ce1
+

@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class HomePageUI {
 	WebDriver driver;
 
-=======
+
 	package uitesting;
 	
 	import org.openqa.selenium.By;
@@ -26,7 +26,7 @@ public class HomePageUI {
 	public class HomePageUI {
 	WebDriver driver;
 	
->>>>>>> a67b8f5397566c18f219b324a8e7421038d20ce1
+
 	public By yourdream = By.xpath("//*[@id=\"app\"]/div/div/div[2]/section[2]/div[2]/h2");
 	public By submitabeer = By.xpath("//*[@id=\"app\"]/div/div/div[2]/section[2]/div[2]/h3");
 	public By setupfor = By.xpath("//*[@id=\"app\"]/div/div/div[2]/section[3]/div[1]/h2");
@@ -36,22 +36,22 @@ public class HomePageUI {
 	public By latestfrom = By.xpath("//*[@id=\"app\"]/div/div/div[2]/section[5]/h2");
 	public By howdoicreate = By.xpath("//*[@id=\"app\"]/div/div/div[2]/section[5]/div/div[2]/div[1]/a[1]/div[2]/h3");
 	public By wematch = By.xpath("//*[@id=\"app\"]/div/div/div[2]/section[6]/h2");
-<<<<<<< HEAD
+
 
 	@BeforeClass
 	public void launchBrowser() throws Exception {
 		System.setProperty("webdriver.chrome.driver", "/home/ucreate-66/eclipse-workspace/brew/Drivers/chromedriver");
-=======
+
 	
 	@BeforeClass
 	public void launchBrowser() throws Exception {
 		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
->>>>>>> a67b8f5397566c18f219b324a8e7421038d20ce1
+
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("window-size=1400,800");
 		options.addArguments("headless");
 		driver = new ChromeDriver(options);
-<<<<<<< HEAD
+
 		driver.manage().window().maximize();
 		driver.get("https://brewbroker-react.herokuapp.com");
 	}
@@ -237,7 +237,7 @@ public class HomePageUI {
 	}
 
 }
-=======
+
 		driver.manage().window().maximize(); 
 		driver.get("https://brewbroker-react.herokuapp.com");
 	}
@@ -414,4 +414,4 @@ public class HomePageUI {
 	}
 	
 	}
->>>>>>> a67b8f5397566c18f219b324a8e7421038d20ce1
+
