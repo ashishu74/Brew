@@ -18,7 +18,7 @@ public class PricingUI {
 
 	@BeforeClass
 	public void launchBrowser() throws Exception {
-		System.setProperty("webdriver.chrome.driver", "/home/ucreate-66/eclipse-workspace/brew/Drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "usr/bin/chromedriver");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("window-size=1400,800");
 		options.addArguments("headless");
